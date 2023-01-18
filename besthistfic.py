@@ -42,7 +42,9 @@
 from enum import Enum
 import re
 
+# Enum giving states in the main FSA.
 States = Enum('States', 'ST_BEGIN ST_NEXT_LINE_IS_TITLE ST_IN_DESC')
+# Enum giving states in used by the FSA in summarize_desc.
 DescStates = Enum('DescStates', "D_BEGIN D_LOOK_FOR_END_ALT")
 
 def summarize_desc(full_desc):
