@@ -53,13 +53,15 @@ sub main()
     line = fin.ReadLine
     ' Look for a 14-digit barcode and replace it with a barcode that has
     ' a space before the last 4 digits.  This is because volunteers pulling holds
-    ' compare the last 4 digits on the printout to the last 4 digits of the item's
+    ' check the last 4 digits on the printout to the last 4 digits of the item's
     ' barcode.  Separating these digits on the printout - as they are separated
     ' on the item - makes this comparison easier.
+    ' Also, add HTML to make the first 10 digits smaller, because in practice
+    ' they are rarely used.  This helps make the last 4 digits more prominent.
     Set matches = re.Execute(line)
     if matches.Count > 0 Then
       idxstart = matches.Item(0).FirstIndex
-      line = Left(line,idxstart+10) & "&nbsp;" & Mid(line,1+idxstart+10)
+      line = "<small>" & Left(line,idxstart+10) & "</small>&nbsp;" & Mid(line,1+idxstart+10)
     End If
 
     If bLookingForHead Then

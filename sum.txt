@@ -1,0 +1,589 @@
+title="All the Light We Cannot See"
+sumloop: '<span>'
+sumloop: '<i>'
+sumloop: 'An alternate cover for this ISBN can be found'
+sumloop: '<a href="https://www.goodreads.com/book/show/25210408-all-the-light-we-cannot-see" rel="nofollow">here</a>'
+sumloop: '</i>'
+sumloop: '<br>'
+sumloop: '<br>'
+sumloop: 'From the highly acclaimed, multiple award-winning Anthony Doerr, the stunningly beautiful instant'
+sumloop: '<i>New York Times</i>'
+sumloop: 'bestseller about a blind French girl and a German boy whose paths collide in occupied France as both try to survive the devastation of World War II.'
+sumloop: '<br>'
+desc=From the highly acclaimed, multiple award-winning Anthony Doerr, the stunningly beautiful instant <i>New York Times</i> bestseller about a blind French girl and a German boy whose paths collide in occupied France as both try to survive the devastation of World War II. 
+title="The Book Thief"
+sumloop: '<span>'
+sumloop: 'It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will be busier still.'
+sumloop: '<br>'
+desc=It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will be busier still. 
+title="The Nightingale"
+sumloop: '<span>'
+sumloop: '<b>'
+sumloop: 'In love we find out who we want to be.'
+sumloop: '<br>'
+desc= In love we find out who we want to be. 
+title="The Help"
+sumloop: '<span>'
+sumloop: 'Three ordinary women are about to take one extraordinary step.'
+sumloop: '<br>'
+desc=Three ordinary women are about to take one extraordinary step. 
+title="Outlander (Outlander, #1)"
+sumloop: '<span>'
+sumloop: 'Claire Randall is leading a double life. She has a husband in one century, and a lover in another...'
+sumloop: '<br>'
+desc=Claire Randall is leading a double life. She has a husband in one century, and a lover in another... 
+title="Memoirs of a Geisha"
+sumloop: '<span>'
+sumloop: 'A literary sensation and runaway bestseller, this brilliant debut novel presents with seamless authenticity and exquisite lyricism the true confessions of one of Japan's most celebrated geisha.'
+sumloop: '<br>'
+desc=A literary sensation and runaway bestseller, this brilliant debut novel presents with seamless authenticity and exquisite lyricism the true confessions of one of Japan's most celebrated geisha. 
+title="To Kill a Mockingbird"
+sumloop: '<span>'
+sumloop: 'The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.'
+sumloop: '<br>'
+desc=The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic. 
+title="The Pillars of the Earth (Kingsbridge, #1)"
+sumloop: '<span>'
+sumloop: '<b>Ken Follett is known worldwide as the master of split-second suspense, but his most beloved and bestselling book tells the magnificent tale of a twelfth-century monk driven to do the seemingly impossible: build the greatest Gothic cathedral the world has ever known.</b>'
+sumloop: '<br>'
+desc=Ken Follett is known worldwide as the master of split-second suspense, but his most beloved and bestselling book tells the magnificent tale of a twelfth-century monk driven to do the seemingly impossible: build the greatest Gothic cathedral the world has ever known. 
+title="The Guernsey Literary and Potato Peel Pie Society"
+sumloop: '<span>'
+sumloop: '<b>'
+sumloop: '<b>'
+sumloop: '#1'
+sumloop: '<i>NEW YORK TIMES </i>'
+sumloop: 'BESTSELLER - NOW A MAJOR MOTION PICTURE ON NETFLIX - A remarkable tale of the island of Guernsey during the German Occupation, and of a society as extraordinary as its name.'
+sumloop: '</b>'
+sumloop: '</b>'
+sumloop: '<br>'
+desc=  #1 <i>NEW YORK TIMES </i> BESTSELLER - NOW A MAJOR MOTION PICTURE ON NETFLIX - A remarkable tale of the island of Guernsey during the German Occupation, and of a society as extraordinary as its name.   
+title="The Kite Runner"
+sumloop: '<span>'
+sumloop: 'The unforgettable, heartbreaking story of the unlikely friendship between a wealthy boy and the son of his father’s servant, The Kite Runner is a beautifully crafted novel set in a country that is in the process of being destroyed. It is about the power of reading, the price of betrayal, and the possibility of redemption; and an exploration of the power of fathers over sons—their love, their sacrifices, their lies.'
+sumloop: '<br>'
+desc=The unforgettable, heartbreaking story of the unlikely friendship between a wealthy boy and the son of his father’s servant, The Kite Runner is a beautifully crafted novel set in a country that is in the process of being destroyed. It is about the power of reading, the price of betrayal, and the possibility of redemption; and an exploration of the power of fathers over sons—their love, their sacrifices, their lies. 
+title="Gone with the Wind"
+sumloop: '<span>'
+sumloop: '<i>'
+sumloop: 'An alternate cover for this ISBN can be found'
+sumloop: '<a href="https://www.goodreads.com/book/show/9810317-gone-with-the-wind" rel="nofollow">here</a>'
+sumloop: '</i>'
+sumloop: '.'
+sumloop: '<br>'
+sumloop: '<br>'
+sumloop: '<i>Gone with the Wind</i>'
+sumloop: 'is a novel written by Margaret Mitchell, first published in 1936. The story is set in Clayton County, Georgia, and Atlanta during the American Civil War and Reconstruction era. It depicts the struggles of young Scarlett O'Hara, the spoiled daughter of a well-to-do plantation owner, who must use every means at her disposal to claw her way out of the poverty she finds herself in after Sherman's March to the Sea. A historical novel, the story is a Bildungsroman or coming-of-age story, with the title taken from a poem written by Ernest Dowson.'
+sumloop: '<br>'
+desc=<i>Gone with the Wind</i> is a novel written by Margaret Mitchell, first published in 1936. The story is set in Clayton County, Georgia, and Atlanta during the American Civil War and Reconstruction era. It depicts the struggles of young Scarlett O'Hara, the spoiled daughter of a well-to-do plantation owner, who must use every means at her disposal to claw her way out of the poverty she finds herself in after Sherman's March to the Sea. A historical novel, the story is a Bildungsroman or coming-of-age story, with the title taken from a poem written by Ernest Dowson. 
+title="Where the Crawdads Sing"
+sumloop: '<span>'
+sumloop: '<b>A novel about a young woman determined to make her way in the wilds of North Carolina, and the two men that will break her isolation open.</b>'
+sumloop: '<br>'
+desc=A novel about a young woman determined to make her way in the wilds of North Carolina, and the two men that will break her isolation open. 
+title="A Gentleman in Moscow"
+sumloop: '<span>'
+sumloop: '<b>The mega-bestseller with more than 1.5 million readers that is soon to be a major television series </b>'
+sumloop: '<br>'
+desc=The mega-bestseller with more than 1.5 million readers that is soon to be a major television series  
+title="The Other Boleyn Girl (The Plantagenet and Tudor Novels, #9)"
+sumloop: '<span>'
+sumloop: '<i>'
+sumloop: 'This is an alternate cover edition of ISBN'
+sumloop: '<a href="https://www.goodreads.com/search/search?q=9780743227445" title="9780743227445" rel="nofollow">9780743227445</a>'
+sumloop: '</i>'
+sumloop: '<br>'
+sumloop: '<br>'
+sumloop: '<b>Two sisters competing for the greatest prize: The love of a king</b>'
+sumloop: '<br>'
+desc=Two sisters competing for the greatest prize: The love of a king 
+title="A Thousand Splendid Suns"
+sumloop: '<span>'
+sumloop: '<i>A Thousand Splendid Suns</i>'
+sumloop: 'is a breathtaking story set against the volatile events of Afghanistan's last thirty years—from the Soviet invasion to the reign of the Taliban to post-Taliban rebuilding—that puts the violence, fear, hope, and faith of this country in intimate, human terms. It is a tale of two generations of characters brought jarringly together by the tragic sweep of war, where personal lives—the struggle to survive, raise a family, find happiness—are inextricable from the history playing out around them.'
+sumloop: '<br>'
+desc=<i>A Thousand Splendid Suns</i> is a breathtaking story set against the volatile events of Afghanistan's last thirty years—from the Soviet invasion to the reign of the Taliban to post-Taliban rebuilding—that puts the violence, fear, hope, and faith of this country in intimate, human terms. It is a tale of two generations of characters brought jarringly together by the tragic sweep of war, where personal lives—the struggle to survive, raise a family, find happiness—are inextricable from the history playing out around them. 
+title="The Alice Network"
+sumloop: '<span>'
+sumloop: 'An alternate cover for this ASIN can be found'
+sumloop: '<a href="https://www.goodreads.com/book/show/36949677-the-alice-network" rel="nofollow">here</a>'
+sumloop: '.'
+sumloop: '<br>'
+sumloop: '<br>'
+sumloop: '<p>In an enthralling new historical novel from national bestselling author Kate Quinn, two women—a female spy recruited to the real-life Alice Network in France during World War I and an unconventional American socialite searching for her cousin in 1947—are brought together in a mesmerizing story of courage and redemption. </p>'
+sumloop: '<p>'
+desc=<p>In an enthralling new historical novel from national bestselling author Kate Quinn, two women—a female spy recruited to the real-life Alice Network in France during World War I and an unconventional American socialite searching for her cousin in 1947—are brought together in a mesmerizing story of courage and redemption. </p> 
+title="The 48 Laws of Power"
+desc=
+title="Dragonfly in Amber (Outlander, #2)"
+sumloop: '<span>'
+sumloop: 'From the author of'
+sumloop: '<i>Outlander</i>'
+sumloop: '... a magnificent epic that once again sweeps us back in time to the drama and passion of 18th-century Scotland...'
+sumloop: '<br>'
+desc=From the author of <i>Outlander</i> ... a magnificent epic that once again sweeps us back in time to the drama and passion of 18th-century Scotland... 
+title="Between Shades of Gray"
+sumloop: '<span>'
+sumloop: 'Lina is just like any other fifteen-year-old Lithuanian girl in 1941. She paints, she draws, she gets crushes on boys. Until one night when Soviet officers barge into her home, tearing her family from the comfortable life they've known. Separated from her father, forced onto a crowded and dirty train car, Lina, her mother, and her young brother slowly make their way north, crossing the Arctic Circle, to a work camp in the coldest reaches of Siberia. Here they are forced, under Stalin's orders, to dig for beets and fight for their lives under the cruelest of conditions.'
+sumloop: '<br>'
+desc=Lina is just like any other fifteen-year-old Lithuanian girl in 1941. She paints, she draws, she gets crushes on boys. Until one night when Soviet officers barge into her home, tearing her family from the comfortable life they've known. Separated from her father, forced onto a crowded and dirty train car, Lina, her mother, and her young brother slowly make their way north, crossing the Arctic Circle, to a work camp in the coldest reaches of Siberia. Here they are forced, under Stalin's orders, to dig for beets and fight for their lives under the cruelest of conditions. 
+title="Before We Were Yours"
+sumloop: '<span>'
+sumloop: 'For readers of'
+sumloop: '<i>Orphan Train </i>'
+sumloop: 'and'
+sumloop: '<i>The Nightingale </i>'
+sumloop: 'comes a "thought-provoking [and] complex tale about two families, two generations apart . . . based on a notorious true-life scandal."*'
+sumloop: '<br>'
+desc=For readers of <i>Orphan Train </i> and <i>The Nightingale </i> comes a "thought-provoking [and] complex tale about two families, two generations apart . . . based on a notorious true-life scandal."* 
+title="Number the Stars"
+desc=
+title="Voyager (Outlander, #3)"
+sumloop: '<span>'
+sumloop: 'From the author of the breathtaking bestsellers'
+sumloop: '<i>Outlander</i>'
+sumloop: 'and'
+sumloop: '<i>Dragonfly in Amber</i>'
+sumloop: ', the extraordinary saga continues.'
+sumloop: '<p>Their passionate encounter happened long ago by whatever measurement Claire Randall took. Two decades before, she had traveled back in time and into the arms of a gallant eighteenth-century Scot named Jamie Fraser. Then she returned to her own century to bear his child, believing him dead in the tragic battle of Culloden. Yet his memory has never lessened its hold on her... and her body still cries out for him in her dreams.</p>'
+sumloop: '<p>Then Claire discovers that Jamie survived. Torn between returning to him and staying with their daughter in her own era, Claire must choose her destiny. And as time and space come full circle, she must find the courage to face the passion and pain awaiting her...the deadly intrigues raging in a divided Scotland... and the daring voyage into the dark unknown that can reunite or forever doom her timeless love.</p>'
+desc=From the author of the breathtaking bestsellers <i>Outlander</i> and <i>Dragonfly in Amber</i> , the extraordinary saga continues. <p>Their passionate encounter happened long ago by whatever measurement Claire Randall took. Two decades before, she had traveled back in time and into the arms of a gallant eighteenth-century Scot named Jamie Fraser. Then she returned to her own century to bear his child, believing him dead in the tragic battle of Culloden. Yet his memory has never lessened its hold on her... and her body still cries out for him in her dreams.</p> <p>Then Claire discovers that Jamie survived. Torn between returning to him and staying with their daughter in her own era, Claire must choose her destiny. And as time and space come full circle, she must find the courage to face the passion and pain awaiting her...the deadly intrigues raging in a divided Scotland... and the daring voyage into the dark unknown that can reunite or forever doom her timeless love.</p> 
+title="The Boy in the Striped Pajamas"
+sumloop: '<span>'
+sumloop: 'If you start to read this book, you will go on a journey with a nine-year-old boy named Bruno. (Though this isn't a book for nine-year-olds.) And sooner or later you will arrive with Bruno at a fence.'
+sumloop: '<br>'
+desc=If you start to read this book, you will go on a journey with a nine-year-old boy named Bruno. (Though this isn't a book for nine-year-olds.) And sooner or later you will arrive with Bruno at a fence. 
+title="Salt to the Sea"
+sumloop: '<span>'
+sumloop: 'While the Titanic and Lusitania are both well-documented disasters, the single greatest tragedy in maritime history is the little-known January 30, 1945 sinking in the Baltic Sea by a Soviet submarine of the Wilhelm Gustloff, a German cruise liner that was supposed to ferry wartime personnel and refugees to safety from the advancing Red Army. The ship was overcrowded with more than 10,500 passengers — the intended capacity was approximately 1,800 — and more than 9,000 people, including 5,000 children, lost their lives.'
+sumloop: '<br>'
+desc=While the Titanic and Lusitania are both well-documented disasters, the single greatest tragedy in maritime history is the little-known January 30, 1945 sinking in the Baltic Sea by a Soviet submarine of the Wilhelm Gustloff, a German cruise liner that was supposed to ferry wartime personnel and refugees to safety from the advancing Red Army. The ship was overcrowded with more than 10,500 passengers — the intended capacity was approximately 1,800 — and more than 9,000 people, including 5,000 children, lost their lives. 
+title="The Things They Carried"
+sumloop: '<span>'
+sumloop: '<b>A classic, life-changing meditation on war, memory, imagination, and the redemptive power of storytelling, with more than two-million copies in print </b>'
+sumloop: '<br>'
+desc=A classic, life-changing meditation on war, memory, imagination, and the redemptive power of storytelling, with more than two-million copies in print  
+title="Water for Elephants"
+sumloop: '<span>'
+sumloop: 'Winner of the 2007 BookBrowse Award for Most Popular Book.'
+sumloop: '<br>'
+desc=Winner of the 2007 BookBrowse Award for Most Popular Book. 
+title="Wolf Hall"
+sumloop: '<span>'
+sumloop: 'Tudor England. Henry VIII is on the throne, but has no heir. Cardinal Wolsey is charged with securing his divorce. Into this atmosphere of distrust comes Thomas Cromwell - a man as ruthlessly ambitious in his wider politics as he is for himself.'
+sumloop: '<br>'
+desc=Tudor England. Henry VIII is on the throne, but has no heir. Cardinal Wolsey is charged with securing his divorce. Into this atmosphere of distrust comes Thomas Cromwell - a man as ruthlessly ambitious in his wider politics as he is for himself. 
+title="The Shadow of the Wind (The Cemetery of Forgotten Books, #1)"
+sumloop: '<span>'
+sumloop: 'Barcelona, 1945: A city slowly heals from its war wounds, and Daniel, an antiquarian book dealer's son who mourns the loss of his mother, finds solace in a mysterious book entitled The Shadow of the Wind, by one Julian Carax. But when he sets out to find the author's other works, he makes a shocking discovery: someone has been systematically destroying every copy of every book Carax has written. In fact, Daniel may have the last of Carax's books in existence. Soon Daniel's seemingly innocent quest opens a door into one of Barcelona's darkest secrets--an epic story of murder, madness, and doomed love.'
+sumloop: '<br>'
+desc=Barcelona, 1945: A city slowly heals from its war wounds, and Daniel, an antiquarian book dealer's son who mourns the loss of his mother, finds solace in a mysterious book entitled The Shadow of the Wind, by one Julian Carax. But when he sets out to find the author's other works, he makes a shocking discovery: someone has been systematically destroying every copy of every book Carax has written. In fact, Daniel may have the last of Carax's books in existence. Soon Daniel's seemingly innocent quest opens a door into one of Barcelona's darkest secrets--an epic story of murder, madness, and doomed love. 
+title="The Tattooist of Auschwitz"
+sumloop: '<span>'
+sumloop: 'In April 1942, Lale Sokolov, a Slovakian Jew, is forcibly transported to the concentration camps at Auschwitz-Birkenau. When his captors discover that he speaks several languages, he is put to work as a Tätowierer (the German word for tattooist), tasked with permanently marking his fellow prisoners.'
+sumloop: '<br>'
+desc=In April 1942, Lale Sokolov, a Slovakian Jew, is forcibly transported to the concentration camps at Auschwitz-Birkenau. When his captors discover that he speaks several languages, he is put to work as a Tätowierer (the German word for tattooist), tasked with permanently marking his fellow prisoners. 
+title="The Song of Achilles"
+sumloop: '<span>'
+sumloop: 'Greece in the age of heroes. Patroclus, an awkward young prince, has been exiled to the court of King Peleus and his perfect son Achilles. By all rights their paths should never cross, but Achilles takes the shamed prince as his friend, and as they grow into young men skilled in the arts of war and medicine their bond blossoms into something deeper - despite the displeasure of Achilles' mother Thetis, a cruel sea goddess. But then word comes that Helen of Sparta has been kidnapped. Torn between love and fear for his friend, Patroclus journeys with Achilles to Troy, little knowing that the years that follow will test everything they hold dear.'
+sumloop: '<br>'
+desc=Greece in the age of heroes. Patroclus, an awkward young prince, has been exiled to the court of King Peleus and his perfect son Achilles. By all rights their paths should never cross, but Achilles takes the shamed prince as his friend, and as they grow into young men skilled in the arts of war and medicine their bond blossoms into something deeper - despite the displeasure of Achilles' mother Thetis, a cruel sea goddess. But then word comes that Helen of Sparta has been kidnapped. Torn between love and fear for his friend, Patroclus journeys with Achilles to Troy, little knowing that the years that follow will test everything they hold dear. 
+title="Sarah's Key"
+sumloop: '<span>'
+sumloop: 'Paris, July 1942: Ten-year-old Sarah is brutally arrested with her family in the Vel' d'Hiv' roundup, the most notorious act of French collaboration with the Nazis. but before the police come to take them, Sarah locks her younger brother, Michel, in their favorite hiding place, a cupboard in the family's apartment. She keeps the key, thinking that she will be back within a few hours.'
+sumloop: '<br>'
+desc=Paris, July 1942: Ten-year-old Sarah is brutally arrested with her family in the Vel' d'Hiv' roundup, the most notorious act of French collaboration with the Nazis. but before the police come to take them, Sarah locks her younger brother, Michel, in their favorite hiding place, a cupboard in the family's apartment. She keeps the key, thinking that she will be back within a few hours. 
+title="Shōgun"
+sumloop: '<span>'
+sumloop: '<i>Alternate Cover for ISBN: 0440178002</i>'
+sumloop: '<br>'
+sumloop: '<br>'
+sumloop: '<b>A bold English adventurer. An invincible Japanese warlord. A beautiful woman torn between two ways of life. All brought together in an extraordinary saga aflame with passion, conflict, ambition, and the struggle for power.</b>'
+sumloop: '<br>'
+desc=A bold English adventurer. An invincible Japanese warlord. A beautiful woman torn between two ways of life. All brought together in an extraordinary saga aflame with passion, conflict, ambition, and the struggle for power. 
+title="Orphan Train"
+sumloop: '<span>'
+sumloop: '<i>'
+sumloop: 'This is an alternate cover edition of ISBN 9780061950728, found'
+sumloop: '<a href="https://www.goodreads.com/book/show/50179100-orphan-train" rel="nofollow">here.</a>'
+sumloop: '</i>'
+sumloop: '<br>'
+sumloop: '<br>'
+sumloop: 'The author of'
+sumloop: '<i>Bird in Hand</i>'
+sumloop: 'and'
+sumloop: '<i>The Way Life Should Be</i>'
+sumloop: 'delivers her most ambitious and powerful novel to date: a captivating story of two very different women who build an unexpected friendship: a 91-year-old woman with a hidden past as an orphan-train rider and the teenage girl whose own troubled adolescence leads her to seek answers to questions no one has ever thought to ask.'
+sumloop: '<br>'
+desc=The author of <i>Bird in Hand</i> and <i>The Way Life Should Be</i> delivers her most ambitious and powerful novel to date: a captivating story of two very different women who build an unexpected friendship: a 91-year-old woman with a hidden past as an orphan-train rider and the teenage girl whose own troubled adolescence leads her to seek answers to questions no one has ever thought to ask. 
+title="The Red Tent"
+sumloop: '<span>'
+sumloop: 'Her name is Dinah. In the Bible, her life is only hinted at in a brief and violent detour within the more familiar chapters of the Book of Genesis that are about her father, Jacob, and his dozen sons. Told in Dinah's voice, this novel reveals the traditions and turmoils of ancient womanhood--the world of the red tent. It begins with the story of her mothers--Leah, Rachel, Zilpah, and Bilhah--the four wives of Jacob. They love Dinah and give her gifts that sustain her through a hard-working youth, a calling to midwifery, and a new home in a foreign land. Dinah's story reaches out from a remarkable period of early history and creates an intimate connection with the past. Deeply affecting,'
+sumloop: '<i>The Red Tent</i>'
+sumloop: 'combines rich storytelling with a valuable achievement in modern fiction: a new view of biblical women's society.'
+sumloop: '<br>'
+desc=Her name is Dinah. In the Bible, her life is only hinted at in a brief and violent detour within the more familiar chapters of the Book of Genesis that are about her father, Jacob, and his dozen sons. Told in Dinah's voice, this novel reveals the traditions and turmoils of ancient womanhood--the world of the red tent. It begins with the story of her mothers--Leah, Rachel, Zilpah, and Bilhah--the four wives of Jacob. They love Dinah and give her gifts that sustain her through a hard-working youth, a calling to midwifery, and a new home in a foreign land. Dinah's story reaches out from a remarkable period of early history and creates an intimate connection with the past. Deeply affecting, <i>The Red Tent</i> combines rich storytelling with a valuable achievement in modern fiction: a new view of biblical women's society. 
+title="Girl with a Pearl Earring"
+sumloop: '<span>'
+sumloop: 'With precisely 35 canvases to his credit, the Dutch painter Johannes Vermeer represents one of the great enigmas of 17th-century art. The meager facts of his biography have been gleaned from a handful of legal documents. Yet Vermeer's extraordinary paintings of domestic life, with their subtle play of light and texture, have come to define the Dutch golden age. His portrait of the anonymous Girl with a Pearl Earring has exerted a particular fascination for centuries - and it is this magnetic painting that lies at the heart of Tracy Chevalier's second novel of the same title.'
+sumloop: '<br>'
+desc=With precisely 35 canvases to his credit, the Dutch painter Johannes Vermeer represents one of the great enigmas of 17th-century art. The meager facts of his biography have been gleaned from a handful of legal documents. Yet Vermeer's extraordinary paintings of domestic life, with their subtle play of light and texture, have come to define the Dutch golden age. His portrait of the anonymous Girl with a Pearl Earring has exerted a particular fascination for centuries - and it is this magnetic painting that lies at the heart of Tracy Chevalier's second novel of the same title. 
+title="Fever 1793"
+desc=
+title="The Underground Railroad"
+sumloop: '<span>'
+sumloop: 'Cora is a slave on a cotton plantation in Georgia. Life is hell for all the slaves, but especially bad for Cora; an outcast even among her fellow Africans, she is coming into womanhood—where even greater pain awaits. When Caesar, a recent arrival from Virginia, tells her about the Underground Railroad, they decide to take a terrifying risk and escape. Matters do not go as planned—Cora kills a young white boy who tries to capture her. Though they manage to find a station and head north, they are being hunted.'
+sumloop: '<br>'
+desc=Cora is a slave on a cotton plantation in Georgia. Life is hell for all the slaves, but especially bad for Cora; an outcast even among her fellow Africans, she is coming into womanhood—where even greater pain awaits. When Caesar, a recent arrival from Virginia, tells her about the Underground Railroad, they decide to take a terrifying risk and escape. Matters do not go as planned—Cora kills a young white boy who tries to capture her. Though they manage to find a station and head north, they are being hunted. 
+title="Drums of Autumn (Outlander, #4)"
+sumloop: '<span>'
+sumloop: '<i>In this breathtaking novel, rich in history and adventure, #1 </i>'
+sumloop: 'New York Times'
+sumloop: '<i> bestselling author Diana Gabaldon continues the story of Claire Randall and Jamie Fraser that started with the now-classic novel </i>'
+sumloop: 'Outlander'
+sumloop: '<i> and continued in </i>'
+sumloop: 'Dragonfly in Amber'
+sumloop: '<i>and</i>'
+sumloop: 'Voyager'
+sumloop: '<i>. Once again spanning continents and centuries, Gabaldon has created a work of sheer brilliance. </i>'
+sumloop: '<br>'
+desc=<i>In this breathtaking novel, rich in history and adventure, #1 </i> New York Times <i> bestselling author Diana Gabaldon continues the story of Claire Randall and Jamie Fraser that started with the now-classic novel </i> Outlander <i> and continued in </i> Dragonfly in Amber <i>and</i> Voyager <i>. Once again spanning continents and centuries, Gabaldon has created a work of sheer brilliance. </i> 
+title="Fall of Giants (The Century Trilogy, #1)"
+sumloop: '<span>'
+sumloop: '<b>'
+sumloop: '<blockquote>This is an epic of love, hatred, war and revolution. This is a huge novel that follows five families through the world-shaking dramas of the First World War, the Russian Revolution, and the struggle for votes for women.</blockquote>'
+sumloop: '</b>'
+sumloop: 'It is 1911. The Coronation Day of King George V. The Williams, a Welsh coal-mining family is linked by romance and enmity to the Fitzherberts, aristocratic coal-mine owners. Lady Maud Fitzherbert falls in love with Walter von Ulrich, a spy at the German Embassy in London. Their destiny is entangled with that of an ambitious young aide to U.S. President Woodrow Wilson and to two orphaned Russian brothers, whose plans to emigrate to America fall foul of war, conscription and revolution. In a plot of unfolding drama and intriguing complexity, "Fall Of Giants" moves seamlessly from Washington to St Petersburg, from the dirt and danger of a coal mine to the glittering chandeliers of a palace, from the corridors of power to the bedrooms of the mighty.'
+desc= <blockquote>This is an epic of love, hatred, war and revolution. This is a huge novel that follows five families through the world-shaking dramas of the First World War, the Russian Revolution, and the struggle for votes for women.</blockquote>  It is 1911. The Coronation Day of King George V. The Williams, a Welsh coal-mining family is linked by romance and enmity to the Fitzherberts, aristocratic coal-mine owners. Lady Maud Fitzherbert falls in love with Walter von Ulrich, a spy at the German Embassy in London. Their destiny is entangled with that of an ambitious young aide to U.S. President Woodrow Wilson and to two orphaned Russian brothers, whose plans to emigrate to America fall foul of war, conscription and revolution. In a plot of unfolding drama and intriguing complexity, "Fall Of Giants" moves seamlessly from Washington to St Petersburg, from the dirt and danger of a coal mine to the glittering chandeliers of a palace, from the corridors of power to the bedrooms of the mighty. 
+title="Code Name Verity"
+sumloop: '<span>'
+sumloop: 'Oct. 11th, 1943 - A British spy plane crashes in Nazi-occupied France. Its pilot and passenger are best friends. One of the girls has a chance at survival. The other has lost the game before it's barely begun.'
+sumloop: '<br>'
+desc=Oct. 11th, 1943 - A British spy plane crashes in Nazi-occupied France. Its pilot and passenger are best friends. One of the girls has a chance at survival. The other has lost the game before it's barely begun. 
+title="World Without End (Kingsbridge, #2)"
+desc=
+title="The Invention of Wings"
+sumloop: '<span>'
+sumloop: 'Writing at the height of her narrative and imaginative gifts, Sue Monk Kidd presents a masterpiece of hope, daring, the quest for freedom, and the desire to have a voice in the world—and it is now the newest Oprah’s Book Club 2.0 selection.'
+sumloop: '<br>'
+desc=Writing at the height of her narrative and imaginative gifts, Sue Monk Kidd presents a masterpiece of hope, daring, the quest for freedom, and the desire to have a voice in the world—and it is now the newest Oprah’s Book Club 2.0 selection. 
+title="The Great Gatsby"
+desc=
+title="Pachinko"
+sumloop: '<span>'
+sumloop: 'In the early 1900s, teenaged Sunja, the adored daughter of a crippled fisherman, falls for a wealthy stranger at the seashore near her home in Korea. He promises her the world, but when she discovers she is pregnant--and that her lover is married--she refuses to be bought. Instead, she accepts an offer of marriage from a gentle, sickly minister passing through on his way to Japan. But her decision to abandon her home, and to reject her son's powerful father, sets off a dramatic saga that will echo down through the generations.'
+sumloop: '<br>'
+desc=In the early 1900s, teenaged Sunja, the adored daughter of a crippled fisherman, falls for a wealthy stranger at the seashore near her home in Korea. He promises her the world, but when she discovers she is pregnant--and that her lover is married--she refuses to be bought. Instead, she accepts an offer of marriage from a gentle, sickly minister passing through on his way to Japan. But her decision to abandon her home, and to reject her son's powerful father, sets off a dramatic saga that will echo down through the generations. 
+title="Little Women"
+sumloop: '<span>'
+sumloop: '<strong>'
+sumloop: 'A beautiful unabridged 150th Anniversary Edition with 200 original illustrations and a Foreword by Alice L. George entitled "Why'
+sumloop: '<em>Little Women</em>'
+sumloop: 'Endures 150 Years Later."'
+sumloop: '</strong>'
+sumloop: '<br>'
+desc=<strong> A beautiful unabridged 150th Anniversary Edition with 200 original illustrations and a Foreword by Alice L. George entitled "Why <em>Little Women</em> Endures 150 Years Later." </strong> 
+title="Beneath a Scarlet Sky"
+sumloop: '<span>'
+sumloop: '<p>'
+sumloop: '<b>'
+sumloop: 'Based on the true story of a forgotten hero,'
+sumloop: '<i>Beneath a Scarlet Sky</i>'
+sumloop: 'is the triumphant, epic tale of one young man’s incredible courage and resilience during one of history’s darkest hours.'
+sumloop: '</b>'
+sumloop: '</p>'
+sumloop: '<p>Pino Lella wants nothing to do with the war or the Nazis. He’s a normal Italian teenager—obsessed with music, food, and girls—but his days of innocence are numbered. When his family home in Milan is destroyed by Allied bombs, Pino joins an underground railroad helping Jews escape over the Alps, and falls for Anna, a beautiful widow six years his senior.</p>'
+sumloop: '<p>In an attempt to protect him, Pino’s parents force him to enlist as a German soldier—a move they think will keep him out of combat. But after Pino is injured, he is recruited at the tender age of eighteen to become the personal driver for Adolf Hitler’s left hand in Italy, General Hans Leyers, one of the Third Reich’s most mysterious and powerful commanders.</p>'
+sumloop: '<p>Now, with the opportunity to spy for the Allies inside the German High Command, Pino endures the horrors of the war and the Nazi occupation by fighting in secret, his courage bolstered by his love for Anna and for the life he dreams they will one day share.</p>'
+sumloop: '<p>'
+desc= Based on the true story of a forgotten hero, <i>Beneath a Scarlet Sky</i> is the triumphant, epic tale of one young man’s incredible courage and resilience during one of history’s darkest hours.  </p> <p>Pino Lella wants nothing to do with the war or the Nazis. He’s a normal Italian teenager—obsessed with music, food, and girls—but his days of innocence are numbered. When his family home in Milan is destroyed by Allied bombs, Pino joins an underground railroad helping Jews escape over the Alps, and falls for Anna, a beautiful widow six years his senior.</p> <p>In an attempt to protect him, Pino’s parents force him to enlist as a German soldier—a move they think will keep him out of combat. But after Pino is injured, he is recruited at the tender age of eighteen to become the personal driver for Adolf Hitler’s left hand in Italy, General Hans Leyers, one of the Third Reich’s most mysterious and powerful commanders.</p> <p>Now, with the opportunity to spy for the Allies inside the German High Command, Pino endures the horrors of the war and the Nazi occupation by fighting in secret, his courage bolstered by his love for Anna and for the life he dreams they will one day share.</p> 
+title="A Tree Grows in Brooklyn"
+sumloop: '<span>'
+sumloop: 'The beloved American classic about a young girl's coming-of-age at the turn of the century, Betty Smith's'
+sumloop: '<i>A Tree Grows in Brooklyn</i>'
+sumloop: 'is a poignant and moving tale filled with compassion and cruelty, laughter and heartache, crowded with life and people and incident. The story of young, sensitive, and idealistic Francie Nolan and her bittersweet formative years in the slums of Williamsburg has enchanted and inspired millions of readers for more than sixty years. By turns overwhelming, sublime, heartbreaking, and uplifting, the daily experiences of the unforgettable Nolans are raw with honesty and tenderly threaded with family connectedness -- in a work of literary art that brilliantly captures a unique time and place as well as incredibly rich moments of universal experience.'
+desc=The beloved American classic about a young girl's coming-of-age at the turn of the century, Betty Smith's <i>A Tree Grows in Brooklyn</i> is a poignant and moving tale filled with compassion and cruelty, laughter and heartache, crowded with life and people and incident. The story of young, sensitive, and idealistic Francie Nolan and her bittersweet formative years in the slums of Williamsburg has enchanted and inspired millions of readers for more than sixty years. By turns overwhelming, sublime, heartbreaking, and uplifting, the daily experiences of the unforgettable Nolans are raw with honesty and tenderly threaded with family connectedness -- in a work of literary art that brilliantly captures a unique time and place as well as incredibly rich moments of universal experience. 
+title="City of Thieves"
+sumloop: '<span>'
+sumloop: '<b>From the critically acclaimed author of The 25th Hour, a captivating novel about war, courage, survival — and a remarkable friendship that ripples across a lifetime.</b>'
+sumloop: '<br>'
+desc=From the critically acclaimed author of The 25th Hour, a captivating novel about war, courage, survival — and a remarkable friendship that ripples across a lifetime. 
+title="Lilac Girls (Lilac Girls, #1)"
+sumloop: '<span>'
+sumloop: '<b>Inspired by the life of a real World War II heroine, this debut novel reveals a story of love, redemption, and secrets that were hidden for decades.</b>'
+sumloop: '<br>'
+desc=Inspired by the life of a real World War II heroine, this debut novel reveals a story of love, redemption, and secrets that were hidden for decades. 
+title="The White Queen (The Plantagenet and Tudor Novels, #2; The Cousins War #1)"
+desc=
+title="The Color Purple"
+sumloop: '<span>'
+sumloop: '<i>The Color Purple</i>'
+sumloop: 'is a classic. With over a million copies sold in the UK alone, it is hailed as one of the all-time 'greats' of literature, inspiring generations of readers.'
+sumloop: '<br>'
+desc=<i>The Color Purple</i> is a classic. With over a million copies sold in the UK alone, it is hailed as one of the all-time 'greats' of literature, inspiring generations of readers. 
+title="Homegoing"
+sumloop: '<span>'
+sumloop: 'A novel of breathtaking sweep and emotional power that traces three hundred years in Ghana and along the way also becomes a truly great American novel. Extraordinary for its exquisite language, its implacable sorrow, its soaring beauty, and for its monumental portrait of the forces that shape families and nations,'
+sumloop: '<i>Homegoing</i>'
+sumloop: 'heralds the arrival of a major new voice in contemporary fiction.'
+sumloop: '<br>'
+desc=A novel of breathtaking sweep and emotional power that traces three hundred years in Ghana and along the way also becomes a truly great American novel. Extraordinary for its exquisite language, its implacable sorrow, its soaring beauty, and for its monumental portrait of the forces that shape families and nations, <i>Homegoing</i> heralds the arrival of a major new voice in contemporary fiction. 
+title="Year of Wonders"
+sumloop: '<span>'
+sumloop: 'When an infected bolt of cloth carries plague from London to an isolated village, a housemaid named Anna Frith emerges as an unlikely heroine and healer. Through Anna's eyes we follow the story of the fateful year of 1666, as she and her fellow villagers confront the spread of disease and superstition. As death reaches into every household and villagers turn from prayers to murderous witch-hunting, Anna must find the strength to confront the disintegration of her community and the lure of illicit love. As she struggles to survive and grow, a year of catastrophe becomes instead annus mirabilis, a "year of wonders."'
+sumloop: '<br>'
+desc=When an infected bolt of cloth carries plague from London to an isolated village, a housemaid named Anna Frith emerges as an unlikely heroine and healer. Through Anna's eyes we follow the story of the fateful year of 1666, as she and her fellow villagers confront the spread of disease and superstition. As death reaches into every household and villagers turn from prayers to murderous witch-hunting, Anna must find the strength to confront the disintegration of her community and the lure of illicit love. As she struggles to survive and grow, a year of catastrophe becomes instead annus mirabilis, a "year of wonders." 
+title="The Remains of the Day"
+sumloop: '<span>'
+sumloop: '<b>An elegant Everyman's Library hardcover edition of the universally acclaimed novel—winner of the Booker Prize, a bestseller and a perpetually strong backlist title, and the basis for an award-winning film—with full-cloth binding, a silk ribbon marker, a chronology, and a new introduction by Salman Rushdie.</b>'
+sumloop: '<br>'
+desc=An elegant Everyman's Library hardcover edition of the universally acclaimed novel—winner of the Booker Prize, a bestseller and a perpetually strong backlist title, and the basis for an award-winning film—with full-cloth binding, a silk ribbon marker, a chronology, and a new introduction by Salman Rushdie. 
+title="The Fiery Cross (Outlander, #5)"
+desc=
+title="The Last Kingdom (The Saxon Stories, #1)"
+sumloop: '<span>'
+sumloop: 'This is the story of the making of England in the 9th and 10th centuries, the years in which King Alfred the Great, his son and grandson defeated the Danish Vikings who had invaded and occupied three of England’s four kingdoms.'
+sumloop: '<br>'
+desc=This is the story of the making of England in the 9th and 10th centuries, the years in which King Alfred the Great, his son and grandson defeated the Danish Vikings who had invaded and occupied three of England’s four kingdoms. 
+title="A Tale of Two Cities"
+sumloop: '<span>'
+sumloop: 'This work has been selected by scholars as being culturally important and is part of the knowledge base of civilization as we know it.'
+sumloop: '<br>'
+desc=This work has been selected by scholars as being culturally important and is part of the knowledge base of civilization as we know it. 
+title="11/22/63"
+desc=
+title="A Breath of Snow and Ashes (Outlander, #6)"
+sumloop: '<span>'
+sumloop: '<i>A Breath of Snow and Ashes</i>'
+sumloop: 'continues the extraordinary story of 18th-century Scotsman Jamie Fraser and his 20th-century wife, Claire.'
+sumloop: '<br>'
+desc=<i>A Breath of Snow and Ashes</i> continues the extraordinary story of 18th-century Scotsman Jamie Fraser and his 20th-century wife, Claire. 
+title="The Name of the Rose"
+desc=
+title="The Paris Wife"
+sumloop: '<span>'
+sumloop: 'A deeply evocative story of ambition and betrayal, The Paris Wife captures a remarkable period of time and a love affair between two unforgettable people: Ernest Hemingway and his wife Hadley.'
+sumloop: '<br>'
+desc=A deeply evocative story of ambition and betrayal, The Paris Wife captures a remarkable period of time and a love affair between two unforgettable people: Ernest Hemingway and his wife Hadley. 
+title="The Poisonwood Bible"
+sumloop: '<span>'
+sumloop: '<i>The Poisonwood Bible</i>'
+sumloop: 'is a story told by the wife and four daughters of Nathan Price, a fierce, evangelical Baptist who takes his family and mission to the Belgian Congo in 1959. They carry with them everything they believe they will need from home, but soon find that all of it -- from garden seeds to Scripture -- is calamitously transformed on African soil. What follows is a suspenseful epic of one family's tragic undoing and remarkable reconstruction over the course of three decades in postcolonial Africa.'
+desc=<i>The Poisonwood Bible</i> is a story told by the wife and four daughters of Nathan Price, a fierce, evangelical Baptist who takes his family and mission to the Belgian Congo in 1959. They carry with them everything they believe they will need from home, but soon find that all of it -- from garden seeds to Scripture -- is calamitously transformed on African soil. What follows is a suspenseful epic of one family's tragic undoing and remarkable reconstruction over the course of three decades in postcolonial Africa. 
+title="The Constant Princess (The Plantagenet and Tudor Novels, #6)"
+sumloop: '<span>'
+sumloop: '<p>Splendid and sumptuous historical novel from the internationally bestselling author, Philippa Gregory, telling of the early life of Katherine of Aragon.</p>'
+sumloop: '<p>We think of Katherine of Aragon as the barren wife of a notorious king; but behind this legacy lies a fascinating story.</p>'
+sumloop: '<p>Katherine of Aragon is born Catalina, the Spanish Infanta, to parents who are both rulers and warriors. Aged four, she is betrothed to Arthur, Prince of Wales, and is raised to be Queen of England. She is never in doubt that it is her destiny to rule that far-off, wet, cold land.</p>'
+sumloop: '<p>Her faith is tested when her prospective father-in-law greets her arrival in her new country with a great insult; Arthur seems little better than a boy; the food is strange and the customs coarse. Slowly she adapts to the first Tudor court, and life as Arthur’s wife grows ever more bearable.</p>'
+sumloop: '<p>But when the studious young man dies, she is left to make her own future: how can she now be queen, and found a dynasty? Only by marrying Arthur’s young brother, the sunny but spoilt Henry. His father and grandmother are against it; her powerful parents prove little use. Yet Katherine is her mother’s daughter and her fighting spirit is strong.</p>'
+sumloop: '<p>She will do anything to achieve her aim; even if it means telling the greatest lie, and holding to it.</p>'
+desc=<p>Splendid and sumptuous historical novel from the internationally bestselling author, Philippa Gregory, telling of the early life of Katherine of Aragon.</p> <p>We think of Katherine of Aragon as the barren wife of a notorious king; but behind this legacy lies a fascinating story.</p> <p>Katherine of Aragon is born Catalina, the Spanish Infanta, to parents who are both rulers and warriors. Aged four, she is betrothed to Arthur, Prince of Wales, and is raised to be Queen of England. She is never in doubt that it is her destiny to rule that far-off, wet, cold land.</p> <p>Her faith is tested when her prospective father-in-law greets her arrival in her new country with a great insult; Arthur seems little better than a boy; the food is strange and the customs coarse. Slowly she adapts to the first Tudor court, and life as Arthur’s wife grows ever more bearable.</p> <p>But when the studious young man dies, she is left to make her own future: how can she now be queen, and found a dynasty? Only by marrying Arthur’s young brother, the sunny but spoilt Henry. His father and grandmother are against it; her powerful parents prove little use. Yet Katherine is her mother’s daughter and her fighting spirit is strong.</p> <p>She will do anything to achieve her aim; even if it means telling the greatest lie, and holding to it.</p> 
+title="The Kitchen House"
+sumloop: '<span>'
+sumloop: 'When a white servant girl violates the order of plantation society, she unleashes a tragedy that exposes the worst and best in the people she has come to call her family. Orphaned while onboard ship from Ireland, seven-year-old Lavinia arrives on the steps of a tobacco plantation where she is to live and work with the slaves of the kitchen house. Under the care of Belle, the master's illegitimate daughter, Lavinia becomes deeply bonded to her adopted family, though she is set apart from them by her white skin.'
+sumloop: '<br>'
+desc=When a white servant girl violates the order of plantation society, she unleashes a tragedy that exposes the worst and best in the people she has come to call her family. Orphaned while onboard ship from Ireland, seven-year-old Lavinia arrives on the steps of a tobacco plantation where she is to live and work with the slaves of the kitchen house. Under the care of Belle, the master's illegitimate daughter, Lavinia becomes deeply bonded to her adopted family, though she is set apart from them by her white skin. 
+title="The Light Between Oceans"
+sumloop: '<span>'
+sumloop: 'A captivating, beautiful, and stunningly accomplished debut novel that opens in 1918 Australia - the story of a lighthouse keeper and his wife who make one devastating choice that forever changes two worlds.'
+sumloop: '<br>'
+desc=A captivating, beautiful, and stunningly accomplished debut novel that opens in 1918 Australia - the story of a lighthouse keeper and his wife who make one devastating choice that forever changes two worlds. 
+title="Daisy Jones &amp; The Six"
+sumloop: '<span>'
+sumloop: 'Everyone knows Daisy Jones &amp; The Six: The band's album'
+sumloop: '<i>Aurora</i>'
+sumloop: 'came to define the rock 'n' roll era of the late seventies, and an entire generation of girls wanted to grow up to be Daisy. But no one knows the reason behind the group's split on the night of their final concert at Chicago Stadium on July 12, 1979 . . . until now.'
+sumloop: '<br>'
+desc=Everyone knows Daisy Jones &amp; The Six: The band's album <i>Aurora</i> came to define the rock 'n' roll era of the late seventies, and an entire generation of girls wanted to grow up to be Daisy. But no one knows the reason behind the group's split on the night of their final concert at Chicago Stadium on July 12, 1979 . . . until now. 
+title="The Grapes of Wrath"
+sumloop: '<span>'
+sumloop: 'The Pulitzer Prize-winning epic of the Great Depression, a book that galvanized—and sometimes outraged—millions of readers.'
+sumloop: '<br>'
+desc=The Pulitzer Prize-winning epic of the Great Depression, a book that galvanized—and sometimes outraged—millions of readers. 
+title="The Seven Husbands of Evelyn Hugo"
+sumloop: '<span>'
+sumloop: 'Reclusive Hollywood icon Evelyn Hugo is finally ready to tell the truth about her glamorous and scandalous life. But when she chooses unknown magazine reporter Monique Grant to write her story, no one is more astounded than Monique herself.'
+sumloop: '<br>'
+desc=Reclusive Hollywood icon Evelyn Hugo is finally ready to tell the truth about her glamorous and scandalous life. But when she chooses unknown magazine reporter Monique Grant to write her story, no one is more astounded than Monique herself. 
+title="The Gentleman's Guide to Vice and Virtue (Montague Siblings, #1)"
+sumloop: '<span>'
+sumloop: '<strong>'
+sumloop: 'A&nbsp;hilarious and swashbuckling teen historical fiction novel, named one of summer's 20 must-read books by'
+sumloop: '<em>Entertainment Weekly</em>'
+sumloop: '! A'
+sumloop: '<em>New York Times</em>'
+sumloop: 'bestseller!'
+sumloop: '</strong>'
+sumloop: '<br>'
+desc=<strong> A&nbsp;hilarious and swashbuckling teen historical fiction novel, named one of summer's 20 must-read books by <em>Entertainment Weekly</em> ! A <em>New York Times</em> bestseller! </strong> 
+title="Snow"
+sumloop: '<span>'
+sumloop: 'One of multiple covers for ISBN 9780375706868.'
+sumloop: '<br>'
+desc=One of multiple covers for ISBN 9780375706868. 
+title="What the Wind Knows"
+sumloop: '<span>'
+sumloop: '<b>A woman’s impossible journey through the ages could change everything…</b>'
+sumloop: '<br>'
+desc=A woman’s impossible journey through the ages could change everything… 
+title="The Clan of the Cave Bear (Earth's Children, #1)"
+sumloop: '<span>'
+sumloop: 'This novel of awesome beauty and power is a moving saga about people, relationships, and the boundaries of love. Through Jean M. Auel's magnificent storytelling we are taken back to the dawn of modern humans, and with a girl named Ayla we are swept up in the harsh and beautiful Ice Age world they shared with the ones who called themselves the'
+sumloop: '<b>Clan of the Cave Bear</b>'
+sumloop: '.'
+sumloop: '<br>'
+desc=This novel of awesome beauty and power is a moving saga about people, relationships, and the boundaries of love. Through Jean M. Auel's magnificent storytelling we are taken back to the dawn of modern humans, and with a girl named Ayla we are swept up in the harsh and beautiful Ice Age world they shared with the ones who called themselves the Clan of the Cave Bear . 
+title="Jane Eyre"
+sumloop: '<span>'
+sumloop: '<p>'
+sumloop: 'Orphaned as a child, Jane has felt an outcast her whole young life. Her courage is tested once again when she arrives at Thornfield Hall, where she has been hired by the brooding, proud Edward Rochester to care for his ward Adèle. Jane finds herself drawn to his troubled yet kind spirit. She falls in love. Hard.'
+sumloop: '<br>'
+desc=Orphaned as a child, Jane has felt an outcast her whole young life. Her courage is tested once again when she arrives at Thornfield Hall, where she has been hired by the brooding, proud Edward Rochester to care for his ward Adèle. Jane finds herself drawn to his troubled yet kind spirit. She falls in love. Hard. 
+title="Hotel on the Corner of Bitter and Sweet"
+desc=
+title="All Quiet on the Western Front"
+sumloop: '<span>'
+sumloop: 'One by one the boys begin to fall…'
+sumloop: '<br>'
+desc=One by one the boys begin to fall… 
+title="The Boleyn Inheritance (The Plantagenet and Tudor Novels, #10)"
+sumloop: '<span>'
+sumloop: '<b>Three Women Who Share One Fate: The Boleyn Inheritance</b>'
+sumloop: '<br>'
+desc=Three Women Who Share One Fate: The Boleyn Inheritance 
+title="An Echo in the Bone (Outlander, #7)"
+sumloop: '<span>'
+sumloop: '<b>The Seventh Outlander novel from #1 National Bestselling author Diana Gabaldon.</b>'
+sumloop: '<br>'
+desc=The Seventh Outlander novel from #1 National Bestselling author Diana Gabaldon. 
+title="Kindred"
+sumloop: '<span>'
+sumloop: 'The first science fiction written by a black woman,'
+sumloop: '<i>Kindred</i>'
+sumloop: 'has become a cornerstone of black American literature. This combination of slave memoir, fantasy, and historical fiction is a novel of rich literary complexity. Having just celebrated her 26th birthday in 1976 California, Dana, an African-American woman, is suddenly and inexplicably wrenched through time into antebellum Maryland. After saving a drowning white boy there, she finds herself staring into the barrel of a shotgun and is transported back to the present just in time to save her life. During numerous such time-defying episodes with the same young man, she realizes the challenge she’s been given...'
+desc=The first science fiction written by a black woman, <i>Kindred</i> has become a cornerstone of black American literature. This combination of slave memoir, fantasy, and historical fiction is a novel of rich literary complexity. Having just celebrated her 26th birthday in 1976 California, Dana, an African-American woman, is suddenly and inexplicably wrenched through time into antebellum Maryland. After saving a drowning white boy there, she finds herself staring into the barrel of a shotgun and is transported back to the present just in time to save her life. During numerous such time-defying episodes with the same young man, she realizes the challenge she’s been given... 
+title="The Secret Life of Bees"
+sumloop: '<span>'
+sumloop: 'Set in South Carolina in 1964,'
+sumloop: '<i>The Secret Life of Bees</i>'
+sumloop: 'tells the story of Lily Owens, whose life has been shaped around the blurred memory of the afternoon her mother was killed. When Lily's fierce-hearted black "stand-in mother," Rosaleen, insults three of the deepest racists in town, Lily decides to spring them both free. They escape to Tiburon, South Carolina--a town that holds the secret to her mother's past. Taken in by an eccentric trio of black beekeeping sisters, Lily is introduced to their mesmerizing world of bees and honey, and the Black Madonna. This is a remarkable novel about divine female power, a story women will share and pass on to their daughters for years to come.'
+desc=Set in South Carolina in 1964, <i>The Secret Life of Bees</i> tells the story of Lily Owens, whose life has been shaped around the blurred memory of the afternoon her mother was killed. When Lily's fierce-hearted black "stand-in mother," Rosaleen, insults three of the deepest racists in town, Lily decides to spring them both free. They escape to Tiburon, South Carolina--a town that holds the secret to her mother's past. Taken in by an eccentric trio of black beekeeping sisters, Lily is introduced to their mesmerizing world of bees and honey, and the Black Madonna. This is a remarkable novel about divine female power, a story women will share and pass on to their daughters for years to come. 
+title="War And Peace"
+sumloop: '<span>'
+sumloop: '<i>War and Peace</i>'
+sumloop: 'broadly focuses on Napoleon's invasion of Russia in 1812 and follows three of the most well-known characters in literature: Pierre Bezukhov, the illegitimate son of a count who is fighting for his inheritance and yearning for spiritual fulfillment; Prince Andrei Bolkonsky, who leaves his family behind to fight in the war against Napoleon; and Natasha Rostov, the beautiful young daughter of a nobleman who intrigues both men.'
+sumloop: '<br>'
+desc=<i>War and Peace</i> broadly focuses on Napoleon's invasion of Russia in 1812 and follows three of the most well-known characters in literature: Pierre Bezukhov, the illegitimate son of a count who is fighting for his inheritance and yearning for spiritual fulfillment; Prince Andrei Bolkonsky, who leaves his family behind to fight in the war against Napoleon; and Natasha Rostov, the beautiful young daughter of a nobleman who intrigues both men. 
+title="Bring Up the Bodies"
+sumloop: '<span>'
+sumloop: 'Alternate Cover Edition ISBN 0805090037 (ISBN13:'
+sumloop: '<a href="https://www.goodreads.com/book/show/40239818-bring-up-the-bodies" rel="nofollow">9780805090031</a>'
+sumloop: ')'
+sumloop: '<br>'
+sumloop: '<br>'
+sumloop: 'The sequel to Hilary Mantel's international bestseller and Man Booker Prize winner Wolf Hall explores one of the most mystifying and frightening episodes in English history: the downfall of Anne Boleyn.'
+sumloop: '<br>'
+desc=The sequel to Hilary Mantel's international bestseller and Man Booker Prize winner Wolf Hall explores one of the most mystifying and frightening episodes in English history: the downfall of Anne Boleyn. 
+title="The Beantown Girls"
+sumloop: '<span>'
+sumloop: '<b>'
+sumloop: 'An Amazon Charts and'
+sumloop: '<i>Washington Post</i>'
+sumloop: 'bestseller.'
+sumloop: '</b>'
+sumloop: '<br>'
+desc= An Amazon Charts and <i>Washington Post</i> bestseller.  
+title="Circe"
+sumloop: '<span>'
+sumloop: 'In the house of Helios, god of the sun and mightiest of the Titans, a daughter is born. But Circe is a strange child—not powerful, like her father, nor viciously alluring like her mother. Turning to the world of mortals for companionship, she discovers that she does possess power—the power of witchcraft, which can transform rivals into monsters and menace the gods themselves.'
+sumloop: '<br>'
+desc=In the house of Helios, god of the sun and mightiest of the Titans, a daughter is born. But Circe is a strange child—not powerful, like her father, nor viciously alluring like her mother. Turning to the world of mortals for companionship, she discovers that she does possess power—the power of witchcraft, which can transform rivals into monsters and menace the gods themselves. 
+title="Les Misérables"
+desc=
+title="The Queen's Fool (The Plantagenet and Tudor Novels, #12)"
+sumloop: '<span>'
+sumloop: '<b>A young woman caught in the rivalry between Queen Mary and her half sister, Elizabeth, must find her true destiny amid treason, poisonous rivalries, loss of faith, and unrequited love.</b>'
+sumloop: '<br>'
+desc=A young woman caught in the rivalry between Queen Mary and her half sister, Elizabeth, must find her true destiny amid treason, poisonous rivalries, loss of faith, and unrequited love. 
+title="The Count of Monte Cristo"
+sumloop: '<span>'
+sumloop: 'Thrown in prison for a crime he has not committed, Edmond Dantes is confined to the grim fortress of If. There he learns of a great hoard of treasure hidden on the Isle of Monte Cristo and he becomes determined not only to escape, but also to unearth the treasure and use it to plot the destruction of the three men responsible for his incarceration. Dumas’ epic tale of suffering and retribution, inspired by a real-life case of wrongful imprisonment, was a huge popular success when it was first serialized in the 1840s.'
+sumloop: '<br>'
+desc=Thrown in prison for a crime he has not committed, Edmond Dantes is confined to the grim fortress of If. There he learns of a great hoard of treasure hidden on the Isle of Monte Cristo and he becomes determined not only to escape, but also to unearth the treasure and use it to plot the destruction of the three men responsible for his incarceration. Dumas’ epic tale of suffering and retribution, inspired by a real-life case of wrongful imprisonment, was a huge popular success when it was first serialized in the 1840s. 
+title="Winter of the World (The Century Trilogy #2)"
+sumloop: '<span>'
+sumloop: 'Winter of the World picks up right where the first book left off, as its five interrelated families—American, German, Russian, English, Welsh—enter a time of enormous social, political, and economic turmoil, beginning with the rise of the Third Reich, through the Spanish Civil War and the great dramas of World War II, up to the explosions of the American and Soviet atomic bombs.'
+sumloop: '<p>Carla von Ulrich, born of German and English parents, finds her life engulfed by the Nazi tide until she commits a deed of great courage and heartbreak. . . . American brothers Woody and Chuck Dewar, each with a secret, take separate paths to momentous events, one in Washington, the other in the bloody jungles of the Pacific. . . . English student Lloyd Williams discovers in the crucible of the Spanish Civil War that he must fight Communism just as hard as Fascism. . . . Daisy Peshkov, a driven American social climber, cares only for popularity and the fast set, until the war transforms her life, not just once but twice, while her cousin Volodya carves out a position in Soviet intelligence that will affect not only this war—but the war to come.</p>'
+sumloop: '<p>These characters and many others find their lives inextricably entangled as their experiences illuminate the cataclysms that marked the century. From the drawing rooms of the rich to the blood and smoke of battle, their lives intertwine, propelling the reader into dramas of ever-increasing complexity.</p>'
+desc=Winter of the World picks up right where the first book left off, as its five interrelated families—American, German, Russian, English, Welsh—enter a time of enormous social, political, and economic turmoil, beginning with the rise of the Third Reich, through the Spanish Civil War and the great dramas of World War II, up to the explosions of the American and Soviet atomic bombs. <p>Carla von Ulrich, born of German and English parents, finds her life engulfed by the Nazi tide until she commits a deed of great courage and heartbreak. . . . American brothers Woody and Chuck Dewar, each with a secret, take separate paths to momentous events, one in Washington, the other in the bloody jungles of the Pacific. . . . English student Lloyd Williams discovers in the crucible of the Spanish Civil War that he must fight Communism just as hard as Fascism. . . . Daisy Peshkov, a driven American social climber, cares only for popularity and the fast set, until the war transforms her life, not just once but twice, while her cousin Volodya carves out a position in Soviet intelligence that will affect not only this war—but the war to come.</p> <p>These characters and many others find their lives inextricably entangled as their experiences illuminate the cataclysms that marked the century. From the drawing rooms of the rich to the blood and smoke of battle, their lives intertwine, propelling the reader into dramas of ever-increasing complexity.</p> 
+title="Atonement"
+sumloop: '<span>'
+sumloop: 'Ian McEwan’s symphonic novel of love and war, childhood and class, guilt and forgiveness provides all the satisfaction of a brilliant narrative and the provocation we have come to expect from this master of English prose.'
+sumloop: '<br>'
+desc=Ian McEwan’s symphonic novel of love and war, childhood and class, guilt and forgiveness provides all the satisfaction of a brilliant narrative and the provocation we have come to expect from this master of English prose. 
+title="Burial Rites"
+sumloop: '<span>'
+sumloop: 'A brilliant literary debut, inspired by a true story: the final days of a young woman accused of murder in Iceland in 1829.'
+sumloop: '<br>'
+desc=A brilliant literary debut, inspired by a true story: the final days of a young woman accused of murder in Iceland in 1829. 
+title="The Great Alone"
+sumloop: '<span>'
+sumloop: 'Alaska, 1974.'
+sumloop: '<br>'
+desc=Alaska, 1974. 
+title="The Witch of Blackbird Pond"
+desc=
+title="The Indigo Girl"
+desc=
+title="The War That Saved My Life (The War That Saved My Life, #1)"
+sumloop: '<span>'
+sumloop: '<b>'
+sumloop: 'An exceptionally moving story of triumph against all odds set during World War 2, from the acclaimed author of'
+sumloop: '<i>Jefferson’s Sons</i>'
+sumloop: 'and for fans of'
+sumloop: '<i>Number the Stars</i>'
+sumloop: '.'
+sumloop: '</b>'
+sumloop: '<br>'
+desc= An exceptionally moving story of triumph against all odds set during World War 2, from the acclaimed author of <i>Jefferson’s Sons</i> and for fans of <i>Number the Stars</i> .  
+title="Written in My Own Heart's Blood (Outlander, #8)"
+sumloop: '<span>'
+sumloop: 'It is June 1778, and the world seems to be turning upside-down. The British Army is withdrawing from Philadelphia, with George Washington in pursuit, and for the first time, it looks as if the rebels might actually win. But for Claire Fraser and her family, there are even more tumultuous revolutions that have to be accommodated.Her former husband, Jamie, has returned from the dead, demanding to know why in his absence she married his best friend, Lord John Grey. Lord John's son, the ninth Earl of Ellesmere, is no less shocked to discover that his real father is actually the newly resurrected Jamie Fraser, and Jamie's nephew Ian Murray discovers that his new-found cousin has an eye for the woman who has just agreed to marry him.'
+sumloop: '<br>'
+desc=It is June 1778, and the world seems to be turning upside-down. The British Army is withdrawing from Philadelphia, with George Washington in pursuit, and for the first time, it looks as if the rebels might actually win. But for Claire Fraser and her family, there are even more tumultuous revolutions that have to be accommodated.Her former husband, Jamie, has returned from the dead, demanding to know why in his absence she married his best friend, Lord John Grey. Lord John's son, the ninth Earl of Ellesmere, is no less shocked to discover that his real father is actually the newly resurrected Jamie Fraser, and Jamie's nephew Ian Murray discovers that his new-found cousin has an eye for the woman who has just agreed to marry him. 
+title="The Giver of Stars"
+sumloop: '<span>'
+sumloop: '<p>'
+sumloop: '<b>'
+sumloop: 'Set in Depression-era America, a breathtaking story of five extraordinary women and their remarkable journey through the mountains of Kentucky and beyond, from the author of'
+sumloop: '<i>Me Before You</i>'
+sumloop: 'and'
+sumloop: '<i>The Peacock Emporium</i>'
+sumloop: '.'
+sumloop: '</b>'
+sumloop: '</p>'
+sumloop: '<p>Alice Wright marries handsome American Bennett Van Cleve hoping to escape her stifling life in England. But small-town Kentucky quickly proves equally claustrophobic, especially living alongside her overbearing father-in-law. So when a call goes out for a team of women to deliver books as part of Eleanor Roosevelt’s new traveling library, Alice signs on enthusiastically.</p>'
+sumloop: '<p>The leader, and soon Alice’s greatest ally, is Margery, a smart-talking, self-sufficient woman who’s never asked a man’s permission for anything. They will be joined by three other singular women who become known as the WPA Packhorse Librarians of Kentucky.</p>'
+sumloop: '<p>What happens to them—and to the men they love—becomes an unforgettable drama of loyalty, justice, humanity and passion. These heroic women refuse to be cowed by men or by convention. And though they face all kinds of dangers in a landscape that is at times breathtakingly beautiful, at others brutal, they’re committed to their job: bringing books to people who have never had any, arming them with facts that will change their lives.</p>'
+sumloop: '<p>'
+desc= Set in Depression-era America, a breathtaking story of five extraordinary women and their remarkable journey through the mountains of Kentucky and beyond, from the author of <i>Me Before You</i> and <i>The Peacock Emporium</i> .  </p> <p>Alice Wright marries handsome American Bennett Van Cleve hoping to escape her stifling life in England. But small-town Kentucky quickly proves equally claustrophobic, especially living alongside her overbearing father-in-law. So when a call goes out for a team of women to deliver books as part of Eleanor Roosevelt’s new traveling library, Alice signs on enthusiastically.</p> <p>The leader, and soon Alice’s greatest ally, is Margery, a smart-talking, self-sufficient woman who’s never asked a man’s permission for anything. They will be joined by three other singular women who become known as the WPA Packhorse Librarians of Kentucky.</p> <p>What happens to them—and to the men they love—becomes an unforgettable drama of loyalty, justice, humanity and passion. These heroic women refuse to be cowed by men or by convention. And though they face all kinds of dangers in a landscape that is at times breathtakingly beautiful, at others brutal, they’re committed to their job: bringing books to people who have never had any, arming them with facts that will change their lives.</p> 
+title="The Alienist (Dr. Laszlo Kreizler, #1)"
+sumloop: '<span>'
+sumloop: 'When The Alienist was first published in 1994, it was a major phenomenon, spending six months on the New York Times bestseller list, receiving critical acclaim, and selling millions of copies. This modern classic continues to be a touchstone of historical suspense fiction for readers everywhere.'
+sumloop: '<br>'
+desc=When The Alienist was first published in 1994, it was a major phenomenon, spending six months on the New York Times bestseller list, receiving critical acclaim, and selling millions of copies. This modern classic continues to be a touchstone of historical suspense fiction for readers everywhere. 
+title="Beloved"
+sumloop: '<span>'
+sumloop: 'Staring unflinchingly into the abyss of slavery, this spellbinding novel transforms history into a story as powerful as Exodus and as intimate as a lullaby.'
+sumloop: '<br>'
+desc=Staring unflinchingly into the abyss of slavery, this spellbinding novel transforms history into a story as powerful as Exodus and as intimate as a lullaby. 
+title="The Historian"
+sumloop: '<span>'
+sumloop: 'To you, perceptive reader, I bequeath my history....Late one night, exploring her father's library, a young woman finds an ancient book and a cache of yellowing letters. The letters are all addressed to "My dear and unfortunate successor," and they plunge her into a world she never dreamed of, a labyrinth where the secrets of her father's past and her mother's mysterious fate connect to an inconceivable evil hidden in the depths of history.'
+sumloop: '<br>'
+desc=To you, perceptive reader, I bequeath my history....Late one night, exploring her father's library, a young woman finds an ancient book and a cache of yellowing letters. The letters are all addressed to "My dear and unfortunate successor," and they plunge her into a world she never dreamed of, a labyrinth where the secrets of her father's past and her mother's mysterious fate connect to an inconceivable evil hidden in the depths of history. 
+title="The Lady of the Rivers (The Plantagenet and Tudor Novels, #1; Cousins War #3)"
+desc=
+title="The Adventures of Huckleberry Finn"
+desc=
