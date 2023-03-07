@@ -14,6 +14,7 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from datetime import datetime
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
@@ -21,6 +22,10 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 # The ID and range of a sample spreadsheet.
 SPREADSHEET_ID = '1gU0CHEUy6zemJGO_7JpD7vuUIRKsT1l5FsZ_wzE8jZ8'
 RANGE_NAME = 'A1:D'
+NCOLS = 4
+
+fileOut = None
+fileTemplate = None
 
 def login():
     # Start by logging in, based on either cached credentials, or the
@@ -59,26 +64,110 @@ def get_spreadsheet(creds):
         print(err)
     return values
 
+# This is meant to return the last modified date/time of the Google spreadsheet.
+# We have to use the Google Drive API (not Sheets API) to do this.
+# However, I am having a tough time getting the right permissions to 
+# access the Google Drive API, so this currently isn't working. 
+def get_last_modified(creds):
+    driveservice = build('drive', 'v3', credentials=creds)
+    metadata = driveservice.files().get(fileId=SPREADSHEET_ID, fields='modifiedTime').execute()
+    print(metadata.__dir__)
+
+def get_current_stamp():
+    now = datetime.now()
+    stamp = now.strftime("%Y-%m-%d %H:%M:%S")
+    return stamp
+
+def write_html_line(line):
+    print(line, file=fileOut)
+
+def copy_template_header():
+    global fileTemplate
+    for line in fileTemplate:
+        line = line.rstrip()
+        if "end template header" in line:
+            break
+        else:
+            write_html_line(line)
+
+def copy_template_trailer():
+    global fileTemplate
+    bCopying = False
+    for line in fileTemplate:
+        line = line.rstrip()
+        if bCopying:
+            write_html_line(line)
+        elif "beg template trailer" in line:
+            bCopying = True
+
+def write_cells_html(row):
+    myclass = "notcontacted"
+    if len(row) >= 4:
+        status = row[3]
+        if status == "Can't find on Facebook":
+            myclass = 'cantfind'
+        elif status == "Deceased":
+            myclass = 'deceased'
+        elif status == "Interested":
+            myclass = 'interested'
+        elif status == "Awaiting reply":
+            myclass = 'waiting'
+        elif status == "Can't make it":
+            myclass = 'cantmakeit'
+        elif status == "":
+            myclass = 'notcontacted'
+        else:
+            myclass = 'error'
+    write_html_line('  <tr class="' + myclass + '">')
+    for irow in range(0, NCOLS):
+        contents = ""
+        if irow < len(row):
+            contents = row[irow]
+        write_html_line('    <td>' + contents + '</td>')
+    write_html_line('  </tr>')
+
+def make_table(values):
+    copy_template_header()
+
+    for irow in range(0,len(values)):
+        row = values[irow]
+        if 0 == irow:
+            out = '<p>' + row[0] + '</p>'
+            write_html_line(out)
+            write_html_line('<table class="studenttable">')
+            write_html_line('<thead class="header1">')
+        elif 2==irow:
+            write_html_line('  <tr>')
+            for cell in row:
+                write_html_line('    <td>' + cell + '</td>')
+            write_html_line('  </tr>')
+            write_html_line('</thead>')
+            write_html_line('<tbody>')
+        elif irow > 2:
+            write_cells_html(row)
+
+
+    write_html_line('</tbody>')
+    write_html_line('</table>')
+    write_html_line('<p><cite>Last updated ' + get_current_stamp() + '</cite></p>')
+    copy_template_trailer()
+
 def main():
+    global fileTemplate, fileOut
     creds = login()
+    # Disabled until I can figure out how to get permissions to obtain document stamp.
+    #get_last_modified(creds)
     values = get_spreadsheet(creds)
     if not values:
         print('No data found.')
         return
+    
+    fileOut = open("index.html", "w")
+    fileTemplate = open("stmsample.html", "r")
     #print("Number of values: ", len(values))
     #print("Print of values:")
-    print(values)
+    #print(values)
 
-    for irow in range(0,len(values)):
-        row = values[irow]
-        out = ""
-        for cell in row:
-            out = out + "\t" + cell
-        print(out)
-        #print(values[irow][0],values[irow][3])
-        #print(row.__dir__())
-        #print("Count of row ",row.count())
-        # Print columns A and D, which correspond to indices 0 and 3.
-        #print('%s, %s' % (row[0], row[3]))
+    make_table(values)
 
 main()

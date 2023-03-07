@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>St. Maurice Grade School Class of 1970</title>
+        <!-- Created by Mark Riordan using 
+            https://github.com/riordanmr/miscscripts/blob/main/stmaurice/stmaurice.py
+         -->
         <style>
             body {
                 font-family: Sans-Serif;
@@ -10,10 +13,12 @@
             h1 {font-size: 130%;}
             .header1 {font-weight: bold; text-align: left;}
             .waiting {background-color: wheat;}
-            .noncontacted {font-weight: normal;}
-            .cantfind {background-color: #ddaaaa;}
+            .notcontacted {font-weight: normal;}
+            .cantfind {background-color: #f0c0c0;}
             .interested {background-color: #aaeeaa;}
-            .cantmakeit {background-color: #c8c8c8;}
+            .cantmakeit {background-color: #db9ef3;}
+            .deceased {background-color: #b0b0b0;}
+            .error {color: red;}
             .studenttable {
                 border-collapse: collapse; 
             }
@@ -29,10 +34,12 @@
         <p>This is a mockup list of the members of the 1970 graduating class of St. Maurice Grade School in Livonia, MI. I'm not sure that all these people went all the way through 1970, but they were in the class that would have graduated in 1970.</p>
         <table class="studenttable">
             <thead class="header1">
-                <td>First</td>
-                <td>Last</td>
-                <td>Other Name</td>
-                <td>Status</td>
+                <tr>
+                    <td>First</td>
+                    <td>Last</td>
+                    <td>Other Name</td>
+                    <td>Status</td>
+                </tr>
             </thead>
             <tbody>
                 <tr class="waiting">
@@ -70,6 +77,12 @@
                     <td>Engels</td>
                     <td></td>
                     <td>Can't make it</td>
+                </tr>
+                <tr class="error">
+                    <td>Error</td>
+                    <td>Erroneous</td>
+                    <td></td>
+                    <td>Invalid status</td>
                 </tr>
             </tbody>
         </table>
