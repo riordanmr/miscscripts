@@ -1,9 +1,10 @@
 # Read the St Maurice Grade 1970 School Classmates Google Sheet
 # and create a web page that resembles that sheet.
+# The design of the web page is based on a template input HTML file. 
 # Mark Riordan  2023-03-05.
 # Based on the sample at https://developers.google.com/sheets/api/quickstart/python
 #
-# python3 stmaurice.py
+# Usage: python3 stmaurice.py
 
 from __future__ import print_function
 
@@ -17,10 +18,13 @@ from googleapiclient.errors import HttpError
 from datetime import datetime
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
+          'https://www.googleapis.com/auth/drive.metadata.readonly']
 
 # The ID and range of a sample spreadsheet.
 SPREADSHEET_ID = '1gU0CHEUy6zemJGO_7JpD7vuUIRKsT1l5FsZ_wzE8jZ8'
+# This is the columns we want from the spreadsheet.  Behind this range
+# are values that we don't want to publish on a web page.
 RANGE_NAME = 'A1:D'
 NCOLS = 4
 
@@ -51,6 +55,7 @@ def login():
             token.write(creds.to_json())
     return creds
 
+# Get a list consisting of the rows in the spreadsheet.
 def get_spreadsheet(creds):
     try:
         service = build('sheets', 'v4', credentials=creds)
@@ -73,14 +78,18 @@ def get_last_modified(creds):
     metadata = driveservice.files().get(fileId=SPREADSHEET_ID, fields='modifiedTime').execute()
     print(metadata.__dir__)
 
+# Return a textual representation of the current date and time.
 def get_current_stamp():
     now = datetime.now()
     stamp = now.strftime("%Y-%m-%d %H:%M:%S")
     return stamp
 
+# Write a line to our output file.
 def write_html_line(line):
     print(line, file=fileOut)
 
+# Copy the beginning of the template file up until the "end template header" line.
+# The copy goes to our HTML output file.
 def copy_template_header():
     global fileTemplate
     for line in fileTemplate:
@@ -90,6 +99,7 @@ def copy_template_header():
         else:
             write_html_line(line)
 
+# Copy the trailer portion of the template file to our HTML output file.
 def copy_template_trailer():
     global fileTemplate
     bCopying = False
@@ -132,11 +142,14 @@ def make_table(values):
     for irow in range(0,len(values)):
         row = values[irow]
         if 0 == irow:
+            # Special-case the first row, which is text to put at
+            # the beginning of the HTML file.
             out = '<p>' + row[0] + '</p>'
             write_html_line(out)
             write_html_line('<table class="studenttable">')
             write_html_line('<thead class="header1">')
         elif 2==irow:
+            # Special case the third row, which is column headers.
             write_html_line('  <tr>')
             for cell in row:
                 write_html_line('    <td>' + cell + '</td>')
@@ -144,6 +157,8 @@ def make_table(values):
             write_html_line('</thead>')
             write_html_line('<tbody>')
         elif irow > 2:
+            # Rows beyond the third one are simply converted to
+            # HTML rows.
             write_cells_html(row)
 
 
@@ -157,17 +172,19 @@ def main():
     creds = login()
     # Disabled until I can figure out how to get permissions to obtain document stamp.
     #get_last_modified(creds)
+
+    # Fetch rows from the Google Sheets spreadsheet.
     values = get_spreadsheet(creds)
     if not values:
         print('No data found.')
         return
     
+    # Open the HTML output file.
     fileOut = open("index.html", "w")
+    # Open the HTML template input file.
     fileTemplate = open("stmsample.html", "r")
-    #print("Number of values: ", len(values))
-    #print("Print of values:")
-    #print(values)
 
+    # Convert the spreadsheet rows to HTML.
     make_table(values)
 
 main()
