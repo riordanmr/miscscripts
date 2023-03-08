@@ -69,14 +69,16 @@ def get_spreadsheet(creds):
         print(err)
     return values
 
-# This is meant to return the last modified date/time of the Google spreadsheet.
+# Return the last modified date/time of the Google spreadsheet.
 # We have to use the Google Drive API (not Sheets API) to do this.
-# However, I am having a tough time getting the right permissions to 
-# access the Google Drive API, so this currently isn't working. 
 def get_last_modified(creds):
     driveservice = build('drive', 'v3', credentials=creds)
     metadata = driveservice.files().get(fileId=SPREADSHEET_ID, fields='modifiedTime').execute()
-    print(metadata.__dir__)
+    lastmod = metadata['modifiedTime']
+    # lastmod now looks like: 2023-03-07T03:32:09.788Z
+    #                         0123456789a123456789b123
+    lastmodtext = lastmod[:10] + " " + lastmod[11:19] + " GMT"
+    return lastmodtext
 
 # Return a textual representation of the current date and time.
 def get_current_stamp():
@@ -114,7 +116,7 @@ def write_cells_html(row):
     myclass = "notcontacted"
     if len(row) >= 4:
         status = row[3]
-        if status == "Can't find on Facebook":
+        if "Can't find" in status:
             myclass = 'cantfind'
         elif status == "Deceased":
             myclass = 'deceased'
@@ -136,7 +138,7 @@ def write_cells_html(row):
         write_html_line('    <td>' + contents + '</td>')
     write_html_line('  </tr>')
 
-def make_table(values):
+def make_table(creds, values):
     copy_template_header()
 
     for irow in range(0,len(values)):
@@ -164,14 +166,13 @@ def make_table(values):
 
     write_html_line('</tbody>')
     write_html_line('</table>')
-    write_html_line('<p><cite>Last updated ' + get_current_stamp() + '</cite></p>')
+    write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
     copy_template_trailer()
 
 def main():
     global fileTemplate, fileOut
+    # Authenticate to Google.
     creds = login()
-    # Disabled until I can figure out how to get permissions to obtain document stamp.
-    #get_last_modified(creds)
 
     # Fetch rows from the Google Sheets spreadsheet.
     values = get_spreadsheet(creds)
@@ -185,6 +186,6 @@ def main():
     fileTemplate = open("stmsample.html", "r")
 
     # Convert the spreadsheet rows to HTML.
-    make_table(values)
+    make_table(creds, values)
 
 main()
