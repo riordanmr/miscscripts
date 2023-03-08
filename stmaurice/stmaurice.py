@@ -121,15 +121,18 @@ def copy_template_trailer():
         elif "beg template trailer" in line:
             bCopying = True
 
+# Increment the count of students with this status.
 def increment_count(status):
     global totals
     if not (status in totals):
         totals[status] = 0
     totals[status] += 1
 
+# Given a row from the spreadsheet, render it in HTML.
 def write_cells_html(row):
     myclass = "error"
     if len(row) >= 4:
+        # Determine the CSS class for this status.
         status = row[3]
         if "Can't find" in status:
             myclass = 'cantfind'
@@ -175,6 +178,8 @@ def write_total_for_status(status):
     global totals
     write_one_total(status, totals[status])
 
+# Write an HTML table with a row for each status, and the number
+# of students with that status.
 def write_totals():
     global totals, list_statuses
     write_html_line('<h2>Totals</h2>')
@@ -182,12 +187,15 @@ def write_totals():
 
     for status in list_statuses:
         write_total_for_status(status)
-    # Check that this is all the recorded statuses.
+    # Check that the statuses we encountered in the spreadsheet
+    # are all accounted for in the official list of possible statuses
+    # in list_statuses.
     for status in totals:
         if not status in list_statuses:
             print("Missing status: " + status)
     write_html_line('</table>')
     
+# Create an HTML table with a row for each student.
 def make_table(creds, values):
     copy_template_header()
 
