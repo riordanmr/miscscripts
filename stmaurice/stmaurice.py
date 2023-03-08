@@ -30,6 +30,15 @@ NCOLS = 4
 
 fileOut = None
 fileTemplate = None
+# Index: text of status (such as 'Interested'); value: count of students with that status.
+totals = {}
+# List of legal statuses, sorted in the order in which we
+# we to print them out.  Originally I just iterated through
+# "totals", but the order didn't make sense.
+list_statuses = ["Interested", "Awaiting reply", "Not contacted", 
+                    "Can't find", "Can't make it", "Deceased"]
+for status in list_statuses:
+    totals[status] = 0
 
 def login():
     # Start by logging in, based on either cached credentials, or the
@@ -112,24 +121,42 @@ def copy_template_trailer():
         elif "beg template trailer" in line:
             bCopying = True
 
+def increment_count(status):
+    global totals
+    if not (status in totals):
+        totals[status] = 0
+    totals[status] += 1
+
 def write_cells_html(row):
-    myclass = "notcontacted"
+    myclass = "error"
     if len(row) >= 4:
         status = row[3]
         if "Can't find" in status:
             myclass = 'cantfind'
+            increment_count("Can't find")
         elif status == "Deceased":
             myclass = 'deceased'
+            increment_count(status)
         elif status == "Interested":
             myclass = 'interested'
+            increment_count(status)
         elif status == "Awaiting reply":
             myclass = 'waiting'
+            increment_count(status)
         elif status == "Can't make it":
             myclass = 'cantmakeit'
-        elif status == "":
+            increment_count(status)
+        elif status == "" or status == None:
             myclass = 'notcontacted'
+            increment_count("Not contacted")
         else:
             myclass = 'error'
+    else:
+        # Insufficient columns means there is no status, 
+        # which means not contacted.
+        myclass = "notcontacted"
+        increment_count("Not contacted")
+
     write_html_line('  <tr class="' + myclass + '">')
     for irow in range(0, NCOLS):
         contents = ""
@@ -138,6 +165,29 @@ def write_cells_html(row):
         write_html_line('    <td>' + contents + '</td>')
     write_html_line('  </tr>')
 
+def write_one_total(label, count):
+    write_html_line('  <tr>')
+    write_html_line('    <td>' + label + '</td>')
+    write_html_line('    <td class="numright">' + str(count) + '</td>')
+    write_html_line('  </tr>')
+
+def write_total_for_status(status):
+    global totals
+    write_one_total(status, totals[status])
+
+def write_totals():
+    global totals, list_statuses
+    write_html_line('<h2>Totals</h2>')
+    write_html_line('<table class="studenttable">')
+
+    for status in list_statuses:
+        write_total_for_status(status)
+    # Check that this is all the recorded statuses.
+    for status in totals:
+        if not status in list_statuses:
+            print("Missing status: " + status)
+    write_html_line('</table>')
+    
 def make_table(creds, values):
     copy_template_header()
 
@@ -163,9 +213,9 @@ def make_table(creds, values):
             # HTML rows.
             write_cells_html(row)
 
-
     write_html_line('</tbody>')
     write_html_line('</table>')
+    write_totals()
     write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
     copy_template_trailer()
 
