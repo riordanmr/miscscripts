@@ -30,6 +30,7 @@ NCOLS = 4
 
 fileOut = None
 fileTemplate = None
+# Dictionary containing the count of students with each status.
 # Index: text of status (such as 'Interested'); value: count of students with that status.
 totals = {}
 # List of legal statuses, sorted in the order in which we
@@ -40,6 +41,7 @@ list_statuses = ["Interested", "Awaiting reply", "Not contacted",
 for status in list_statuses:
     totals[status] = 0
 
+# Authenticate to Google Sheets / Google Drive.
 def login():
     # Start by logging in, based on either cached credentials, or the
     # file credentials.json, which would have been downloaded from the
@@ -223,7 +225,11 @@ def make_table(creds, values):
 
     write_html_line('</tbody>')
     write_html_line('</table>')
+
+    # Create a second table with the number of students with
+    # each status. 
     write_totals()
+    
     write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
     copy_template_trailer()
 
