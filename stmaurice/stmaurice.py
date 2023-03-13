@@ -33,12 +33,13 @@ fileTemplate = None
 # Dictionary containing the count of students with each status.
 # Index: text of status (such as 'Interested'); value: count of students with that status.
 totals = {}
-# List of legal statuses, sorted in the order in which we
+# Dict of legal statuses, sorted in the order in which we
 # we to print them out.  Originally I just iterated through
 # "totals", but the order didn't make sense.
-list_statuses = ["Interested", "Awaiting reply", "Not contacted", 
-                    "Can't find", "Can't make it", "Deceased"]
-for status in list_statuses:
+dict_statuses = {"Interested" : "interested", "Awaiting reply" : "waiting", 
+                 "Not contacted" : "notcontacted", "Can't find" : "cantfind", 
+                 "Can't make it": "cantmakeit", "Deceased" : "deceased"}
+for status in dict_statuses:
     totals[status] = 0
 
 # Authenticate to Google Sheets / Google Drive.
@@ -170,30 +171,30 @@ def write_cells_html(row):
         write_html_line('    <td>' + contents + '</td>')
     write_html_line('  </tr>')
 
-def write_one_total(label, count):
+def write_one_total(label, myclass, count):
     write_html_line('  <tr>')
-    write_html_line('    <td>' + label + '</td>')
+    write_html_line('    <td class="' + myclass +'">' + label + '</td>')
     write_html_line('    <td class="numright">' + str(count) + '</td>')
     write_html_line('  </tr>')
 
-def write_total_for_status(status):
+def write_total_for_status(status, myclass):
     global totals
-    write_one_total(status, totals[status])
+    write_one_total(status, myclass, totals[status])
 
 # Write an HTML table with a row for each status, and the number
 # of students with that status.
 def write_totals():
-    global totals, list_statuses
+    global totals, dict_statuses
     write_html_line('<h2>Totals</h2>')
     write_html_line('<table class="studenttable">')
 
-    for status in list_statuses:
-        write_total_for_status(status)
+    for status in dict_statuses:
+        write_total_for_status(status, dict_statuses[status])
     # Check that the statuses we encountered in the spreadsheet
     # are all accounted for in the official list of possible statuses
-    # in list_statuses.
+    # in dict_statuses.
     for status in totals:
-        if not status in list_statuses:
+        if not status in dict_statuses:
             print("Missing status: " + status)
     write_html_line('</table>')
     
@@ -229,7 +230,7 @@ def make_table(creds, values):
     # Create a second table with the number of students with
     # each status. 
     write_totals()
-    
+
     write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
     copy_template_trailer()
 
