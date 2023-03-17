@@ -2,7 +2,8 @@
 # and create a web page that resembles that sheet.
 # The design of the web page is based on a template input HTML file. 
 # Mark Riordan  2023-03-05.
-# Based on the sample at https://developers.google.com/sheets/api/quickstart/python
+# Based on the Google Sheets API sample at 
+# https://developers.google.com/sheets/api/quickstart/python
 #
 # Usage: python3 stmaurice.py
 
@@ -21,7 +22,7 @@ from datetime import datetime
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
           'https://www.googleapis.com/auth/drive.metadata.readonly']
 
-# The ID and range of a sample spreadsheet.
+# The ID and range of the spreadsheet.
 SPREADSHEET_ID = '1gU0CHEUy6zemJGO_7JpD7vuUIRKsT1l5FsZ_wzE8jZ8'
 # This is the columns we want from the spreadsheet.  Behind this range
 # are values that we don't want to publish on a web page.
@@ -36,6 +37,7 @@ totals = {}
 # Dict of legal statuses, sorted in the order in which we
 # we to print them out.  Originally I just iterated through
 # "totals", but the order didn't make sense.
+# Index: text of status; value: CSS class for that status.
 dict_statuses = {"Interested" : "interested", "Awaiting reply" : "waiting", 
                  "Not contacted" : "notcontacted", "Can't find" : "cantfind", 
                  "Can't make it": "cantmakeit", "Deceased" : "deceased"}
