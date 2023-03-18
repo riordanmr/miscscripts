@@ -233,6 +233,9 @@ def make_table(creds, values):
     # each status. 
     write_totals()
 
+    # Refer people to our Facebook group.
+    write_html_line('<p>We are planning a class reunion for the second half of 2023. For more information, see <a href="https://www.facebook.com/groups/952796345722090">our Facebook group</a>.</p>')
+
     write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
     copy_template_trailer()
 
