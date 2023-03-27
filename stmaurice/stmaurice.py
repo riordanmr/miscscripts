@@ -11,6 +11,8 @@ from __future__ import print_function
 
 import os.path
 
+# Get the following prerequisities via:
+# pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -234,7 +236,9 @@ def make_table(creds, values):
     write_totals()
 
     # Refer people to our Facebook group.
-    write_html_line('<p>We are planning a class reunion for the second half of 2023. For more information, see <a href="https://www.facebook.com/groups/952796345722090">our Facebook group</a>.</p>')
+    write_html_line('<p>We are planning a class reunion for the second half of 2023. ')
+    write_html_line('If you have any other information on classmates, please <a href="mailto:riordan@rocketmail.com">contact us</a>. ')
+    write_html_line('For more information, see <a href="https://www.facebook.com/groups/952796345722090">our Facebook group</a>.</p>')
     write_html_line('<p>Here\'s the <a href="images/StMaurice1969-1970.jpg">1969-1970 class picture</a>.</p>')
     write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
     copy_template_trailer()
