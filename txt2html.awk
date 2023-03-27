@@ -3,11 +3,13 @@
 # by blank lines.
 # Usage: awk -f /Users/mrr/Documents/GitHub/miscscripts/txt2html.awk blameless.txt >blameless.html
 BEGIN {
+    print "<!DOCTYPE html>"
     print "<html>"
     print "<head>"
     print "  <meta charset=\"UTF-8\">"
     print "</head>"
     print "<body>"
+    print "<p>"
 }
 {
     line = $0
@@ -16,8 +18,9 @@ BEGIN {
             print "</p>"
         }
         print "<p>"
-    } 
-    print line
+    } else {
+        print line
+    }
 }
 END {
     print "</p>"
