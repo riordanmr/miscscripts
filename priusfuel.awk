@@ -23,7 +23,9 @@ BEGIN {
     year = substr(date, 1, 4)
 
     err = ""
-    if(odometer != 0 && odometer < prev_odometer) {
+    if(date < prev_date) {
+        err = "Date went backwards"
+    } else if(odometer != 0 && odometer < prev_odometer) {
         err = "Miles went backwards"
     } else if((prev_odometer > 0) && (odometer - prev_odometer)>500000) {
         err = "Too big a gap in odometer readings"
