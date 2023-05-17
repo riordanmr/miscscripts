@@ -37,7 +37,7 @@ fileTemplate = None
 # Index: text of status (such as 'Interested'); value: count of students with that status.
 totals = {}
 # Dict of legal statuses, sorted in the order in which we
-# we to print them out.  Originally I just iterated through
+# want to print them out.  Originally I just iterated through
 # "totals", but the order didn't make sense.
 # Index: text of status; value: CSS class for that status.
 dict_statuses = {"Interested" : "interested", "Awaiting reply" : "waiting", 
@@ -71,7 +71,7 @@ def login():
             token.write(creds.to_json())
     return creds
 
-# Get a list consisting of the rows in the spreadsheet.
+# Return a list consisting of the rows in the spreadsheet.
 def get_spreadsheet(creds):
     try:
         service = build('sheets', 'v4', credentials=creds)
@@ -135,7 +135,8 @@ def increment_count(status):
         totals[status] = 0
     totals[status] += 1
 
-# Given a row from the spreadsheet, render it in HTML.
+# Given a row from the spreadsheet, render it in HTML and write the
+# HTML to the output file.
 def write_cells_html(row):
     myclass = "error"
     if len(row) >= 4:
@@ -175,12 +176,14 @@ def write_cells_html(row):
         write_html_line('    <td>' + contents + '</td>')
     write_html_line('  </tr>')
 
+# Write an HTML row giving the total number of students for a given status.
 def write_one_total(label, myclass, count):
     write_html_line('  <tr>')
     write_html_line('    <td class="' + myclass +'">' + label + '</td>')
     write_html_line('    <td class="numright">' + str(count) + '</td>')
     write_html_line('  </tr>')
 
+# Write an HTML row giving the total number of students for a given status.
 def write_total_for_status(status, myclass):
     global totals
     write_one_total(status, myclass, totals[status])
