@@ -1,3 +1,2 @@
-sftp u35710771@home92543841.1and1-data.host <<EOF
-cd wwwroot/stmaurice
+sftp u807245960@home92543841.1and1-data.host <<EOF
 put index.html
