@@ -6,6 +6,20 @@
 # https://developers.google.com/sheets/api/quickstart/python
 #
 # Usage: python3 stmaurice.py
+#
+# The spreadsheet consists of:
+# - A line of explanatory text, to be copied to the web page verbatim.
+# - A blank line
+# - A line of column headers, like this (converted to CSV):
+#   First,Last,Other Name,Status,Email,Mobile,Surv,Ann,Likely?,Notes
+# - Lines of classmate info, like this (converted to CSV):
+#   Mark,Riordan,,Interested,riordan@rocketmail.com,608-338-9281,r,y,Very likely,
+#   For the Surv column, r=responded to survey.
+#   For the Ann column, y=responded to announcement of the reunion date.
+#   For the Likely? column, which applies only if Status==Interested, a textual
+#       description of whether they are likely to attend.  For our purposes, the
+#       interesting values are Likely and Very likely, with other values treated
+#       as Can't make it.
 
 from __future__ import print_function
 
@@ -28,8 +42,8 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
 SPREADSHEET_ID = '1gU0CHEUy6zemJGO_7JpD7vuUIRKsT1l5FsZ_wzE8jZ8'
 # This is the columns we want from the spreadsheet.  Behind this range
 # are values that we don't want to publish on a web page.
-RANGE_NAME = 'A1:D'
-NCOLS = 4
+RANGE_NAME = 'A1:E'
+NCOLS_TO_OUTPUT = 4
 
 fileOut = None
 fileTemplate = None
@@ -40,7 +54,7 @@ totals = {}
 # want to print them out.  Originally I just iterated through
 # "totals", but the order didn't make sense.
 # Index: text of status; value: CSS class for that status.
-dict_statuses = {"Interested" : "interested", "Awaiting reply" : "waiting", 
+dict_statuses = {"Will attend" : "interested", "Awaiting reply" : "waiting", 
                  "Not contacted" : "notcontacted", "Can't find" : "cantfind", 
                  "Can't make it": "cantmakeit", "Deceased" : "deceased"}
 for status in dict_statuses:
@@ -149,7 +163,13 @@ def write_cells_html(row):
             myclass = 'deceased'
             increment_count(status)
         elif status == "Interested":
-            myclass = 'interested'
+            likely = row[4]
+            if likely == "Likely" or likely == "Very likely":
+                status = "Will attend"
+                myclass = 'interested'
+            else:
+                status = "Can't make it"
+                myclass = 'cantmakeit'
             increment_count(status)
         elif status == "Awaiting reply":
             myclass = 'waiting'
@@ -162,6 +182,7 @@ def write_cells_html(row):
             increment_count("Not contacted")
         else:
             myclass = 'error'
+        row[3] = status
     else:
         # Insufficient columns means there is no status, 
         # which means not contacted.
@@ -169,7 +190,7 @@ def write_cells_html(row):
         increment_count("Not contacted")
 
     write_html_line('  <tr class="' + myclass + '">')
-    for irow in range(0, NCOLS):
+    for irow in range(0, NCOLS_TO_OUTPUT):
         contents = ""
         if irow < len(row):
             contents = row[irow]
@@ -221,8 +242,8 @@ def make_table(creds, values):
         elif 2==irow:
             # Special case the third row, which is column headers.
             write_html_line('  <tr>')
-            for cell in row:
-                write_html_line('    <td>' + cell + '</td>')
+            for icol in range(0, NCOLS_TO_OUTPUT):
+                write_html_line('    <td>' + row[icol] + '</td>')
             write_html_line('  </tr>')
             write_html_line('</thead>')
             write_html_line('<tbody>')
