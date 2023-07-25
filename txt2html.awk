@@ -13,7 +13,9 @@ BEGIN {
 }
 {
     line = $0
-    if(0==length(line)) {
+    if(every) {
+        print "<p>" line "</p>"
+    } else if(0==length(line)) {
         if(NR > 1) {
             print "</p>"
         }
