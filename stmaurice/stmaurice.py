@@ -57,6 +57,14 @@ totals = {}
 dict_statuses = {"Will attend" : "interested", "Awaiting reply" : "waiting", 
                  "Not contacted" : "notcontacted", "Can't find" : "cantfind", 
                  "Can't make it": "cantmakeit", "Deceased" : "deceased"}
+dict_statuses = {"Will attend" : "interested", 
+                 "Awaiting reply" : "waiting", 
+                 "Not contacted" : "notcontacted", 
+                 "No reply" : "noreply",
+                 "Can't find" : "cantfind", 
+                 "Can't make it": "cantmakeit", 
+                 "Deceased" : "deceased"}
+
 for status in dict_statuses:
     totals[status] = 0
 
@@ -174,6 +182,9 @@ def write_cells_html(row):
         elif status == "Awaiting reply":
             myclass = 'waiting'
             increment_count(status)
+        elif status == "No reply":
+            myclass = 'noreply'
+            increment_count(status)            
         elif status == "Can't make it":
             myclass = 'cantmakeit'
             increment_count(status)
