@@ -271,8 +271,7 @@ def make_table(creds, values):
     write_totals()
 
     # Refer people to our Facebook group.
-    write_html_line('<p>We are planning a class reunion for Aug 19, 2023, at the former St. Maurice Church (now St. Rafka). ')
-    write_html_line('If you have any other information on classmates, please <a href="mailto:riordan@rocketmail.com">contact us</a>. ')
+    write_html_line('<p>If you have any other information on classmates, please <a href="mailto:riordan@rocketmail.com">contact us</a>. </p>')
     # write_html_line('For more information, see <a href="https://www.facebook.com/groups/952796345722090">our Facebook group</a>.</p>')
     write_html_line('<p>Here\'s the <a href="images/StMaurice1969-1970b.jpg">1969-1970 class picture</a>.</p>')
     write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
@@ -290,7 +289,7 @@ def main():
         return
     
     # Open the HTML output file.
-    fileOut = open("index.html", "w")
+    fileOut = open("web/status2023.html", "w")
     # Open the HTML template input file.
     fileTemplate = open("stmsample.html", "r")
 
