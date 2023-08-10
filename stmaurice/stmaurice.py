@@ -23,7 +23,7 @@
 
 from __future__ import print_function
 
-import os.path
+import os
 
 # Get the following prerequisities via:
 # pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
@@ -40,13 +40,16 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
 
 # The ID and range of the spreadsheet.
 SPREADSHEET_ID = '1gU0CHEUy6zemJGO_7JpD7vuUIRKsT1l5FsZ_wzE8jZ8'
-# This is the columns we want from the spreadsheet.  Behind this range
-# are values that we don't want to publish on a web page.
-RANGE_NAME = 'A1:E'
+# This is the columns we want from the spreadsheet.  
+RANGE_NAME = 'A1:J'
 NCOLS_TO_OUTPUT = 4
 
 fileOut = None
 fileTemplate = None
+fileStories = None
+
+googleLastModified = ""
+
 # Dictionary containing the count of students with each status.
 # Index: text of status (such as 'Interested'); value: count of students with that status.
 totals = {}
@@ -67,6 +70,7 @@ dict_statuses = {"Will attend" : "interested",
 
 for status in dict_statuses:
     totals[status] = 0
+
 
 # Authenticate to Google Sheets / Google Drive.
 def login():
@@ -124,7 +128,7 @@ def get_current_stamp():
     stamp = now.strftime("%Y-%m-%d %H:%M:%S")
     return stamp
 
-# Write a line to our output file.
+# Write a line to our classmate status output file.
 def write_html_line(line):
     print(line, file=fileOut)
 
@@ -239,6 +243,7 @@ def write_totals():
     
 # Create an HTML table with a row for each student.
 def make_table(creds, values):
+    global googleLastModified
     copy_template_header()
 
     for irow in range(0,len(values)):
@@ -274,11 +279,108 @@ def make_table(creds, values):
     write_html_line('<p>If you have any other information on classmates, please <a href="mailto:riordan@rocketmail.com">contact us</a>. </p>')
     # write_html_line('For more information, see <a href="https://www.facebook.com/groups/952796345722090">our Facebook group</a>.</p>')
     write_html_line('<p>Here\'s the <a href="images/StMaurice1969-1970b.jpg">1969-1970 class picture</a>.</p>')
-    write_html_line('<p><cite>Last updated ' + get_last_modified(creds) + '</cite></p>')
+    write_html_line('<p><cite>Last updated ' + googleLastModified + '</cite></p>')
     copy_template_trailer()
 
+#=======================================================================
+# Functions for writing the stories HTML file.
+
+# Return a list of names of files (not directories) in the given directory.
+def get_image_filenames(dir):
+    files = [f for f in os.listdir(dir) if os.path.isfile(dir+'/'+f)]
+    return files
+
+# Write a line to our stories output file.
+def write_stories_line(line):
+    print(line, file=fileStories)
+
+# Append the given named input file to the file with the given open handle.
+def append_file(fileNameIn, fileHandleOut):
+    fileHandleIn = open(fileNameIn, "r")
+    text = fileHandleIn.read()
+    fileHandleIn.close()
+    fileHandleOut.write(text)
+
+# Convert the text of a story to HTML.  This involves quoting special characters,
+# and replacing newlines with <p>.
+def quote_story(story):
+    story = story.replace("&", "&amp;")
+    story = story.replace("\n\n", "\n")
+    story = story.replace("\n", "</p><p>")
+    return "<p>" + story + "</p>"
+
+# Write the HTML file containing photos of classmates, and their stories.
+def create_stories_page(values):
+    global fileStories, googleLastModified
+    fileStories = open("web/stories.html", "w")
+    # Create data structures containing the names of files containing photos.
+    # We'll use this to create HTML that references photos that actually exist.
+    imagesVintage = get_image_filenames("web/images/vintage")
+    imagesRecent = get_image_filenames("web/images/recent")
+
+    # Write the first part of the output file from a template input file.
+    append_file("bios-skel.html", fileStories)
+    write_stories_line("<!-- Created by https://github.com/riordanmr/miscscripts/blob/main/stmaurice/stmaurice.py at " + get_current_stamp() + " -->")
+
+    # Loop through all students in our spreadsheet.
+    for irow in range(3,len(values)):
+        row = values[irow]
+        shortFirst = firstName = row[0]
+        # Compute shortFirst as the first part of the first name. 
+        # E.g., "Katherine (Katie)" should yield "Katherine".
+        idx = shortFirst.find(" ")
+        if idx > 0:
+            shortFirst = shortFirst[0:idx]
+        lastName = row[1]
+        extraName = ""
+        # Some students don't have many columns populated, which causes the number
+        # of elements in the row array to be less than expected.  So to avoid array
+        # over-referencing, check the number of elements in the row array.
+        if len(row)>2:
+            extraName = row[2]
+        stories = ""
+        if len(row)>9:
+            stories = row[9]
+
+        # Convert the story text to HTML.
+        stories = quote_story(stories)
+
+        origName = firstName + " " + lastName
+        fullName = origName
+        if len(extraName) > 0:
+            fullName = fullName + " " + extraName
+        
+        photoName = shortFirst + lastName + ".jpg"
+        divName = shortFirst + lastName
+
+        write_stories_line("<div id='" + divName + "'>")
+        write_stories_line("  <table>")
+        write_stories_line("    <tr><td class='stuname noborder' width='180'>" + fullName + "</td>")
+        # Output HTML for the classmate photos, but only if they exist in the local filesystem.
+        # This should prevent bad image references, though it relies upon the website having the
+        # same images as the local filesystem.
+        photoHtml = ""
+        if photoName in imagesVintage:
+            photoHtml = "<a href='images/vintage/" + photoName + "'><img src=\"images/vintage/" + photoName + "\" height='200'></a>"
+        write_stories_line("    <td class='noborder'>" + photoHtml + "</td>")
+        photoHtml = ""
+        if photoName in imagesRecent:
+            photoHtml = "<a href='images/recent/" + photoName + "'><img src=\"images/recent/" + photoName + "\" height='200'></a>"
+        write_stories_line("    <td class='noborder'>" + photoHtml + "</td>")
+
+        write_stories_line("  </table>")
+        write_stories_line("  <p>" + stories + "</p>")
+        write_stories_line("  <hr/>")
+        write_stories_line("</div>")
+    
+    write_stories_line('<p><cite>Last updated ' + googleLastModified + '</cite></p>')
+    # Write the last part of the output file from a template input file.
+    append_file("bios-skel-end.html", fileStories)
+    fileStories.close()
+
 def main():
-    global fileTemplate, fileOut
+    global fileTemplate, fileOut, googleLastModified
+
     # Authenticate to Google.
     creds = login()
 
@@ -288,6 +390,8 @@ def main():
         print('No data found.')
         return
     
+    googleLastModified = get_last_modified(creds)
+    
     # Open the HTML output file.
     fileOut = open("web/status2023.html", "w")
     # Open the HTML template input file.
@@ -295,5 +399,8 @@ def main():
 
     # Convert the spreadsheet rows to HTML.
     make_table(creds, values)
+
+    # Create the HTML page containing classmate photos and stories.
+    create_stories_page(values)
 
 main()
