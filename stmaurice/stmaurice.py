@@ -385,11 +385,11 @@ def create_stories_page(values):
         # same images as the local filesystem.
         photoHtml = ""
         if photoName in imagesVintage:
-            photoHtml = "<a href='images/vintage/" + photoName + "'><img src=\"images/vintage/" + photoName + "\" height='200'></a>"
+            photoHtml = "<a href='images/vintage/" + photoName + "'><img src=\"images/vintage/thumbs/" + photoName + "\" height='200'></a>"
         write_stories_line("    <td class='noborder'>" + photoHtml + "</td>")
         photoHtml = ""
         if photoName in imagesRecent:
-            photoHtml = "<a href='images/recent/" + photoName + "'><img src=\"images/recent/" + photoName + "\" height='200'></a>"
+            photoHtml = "<a href='images/recent/" + photoName + "'><img src=\"images/recent/thumbs/" + photoName + "\" height='200'></a>"
         write_stories_line("    <td class='noborder'>" + photoHtml + "</td>")
 
         write_stories_line("  </table>")
