@@ -8,7 +8,7 @@
         <style>
             body {
                 font-family: Sans-Serif;
-                font-size: 110%;
+                font-size: 16pt;
             }
             h1 {font-size: 130%;}
             h2 {font-size: 110%;}
@@ -28,6 +28,14 @@
             td, td {padding-left: 0.5em; padding-right: 0.5em; 
                 padding-top: 0.15em; padding-bottom: 0.15em;
                 border: 1.5px solid #ccc
+            }
+
+            /* Use a larger font, only on mobile devices.  Thanks to https://habr.com/en/sandbox/163605/ */
+            @media (pointer: coarse)  {
+                /* mobile device */
+                body {
+                    font-size: 24pt;
+                }
             }
         </style>
     </head>
