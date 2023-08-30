@@ -1,6 +1,9 @@
 # Read the St Maurice Grade 1970 School Classmates Google Sheet
-# and create a web page that resembles that sheet.
-# The design of the web page is based on a template input HTML file. 
+# and create two web pages:
+# - status2023.html, which contains status information about how 
+#   likely each classmate is to attend the 2023 reunion.
+# - stories.html, which contains classmate-submitted stories.
+# The design of the web pages are based on template input HTML files. 
 # Mark Riordan  2023-03-05.
 # Based on the Google Sheets API sample at 
 # https://developers.google.com/sheets/api/quickstart/python
