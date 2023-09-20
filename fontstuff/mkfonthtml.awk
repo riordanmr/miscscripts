@@ -29,7 +29,7 @@ BEGIN {
         }
     }
     if(bShow) {
-        print "<p style='font-family: " fontname "'>15th Annual - Home Run - McKee Park - Memorial Walk - " fontname "</p>" 
+        print "<p style='font-family: " fontname "'>McKee Park - Saturday - 15th Annual - Home Run - McKee Park - Memorial Walk - " fontname "</p>" 
     }
 }
 
