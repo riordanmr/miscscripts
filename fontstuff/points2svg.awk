@@ -20,8 +20,9 @@
 #
 # Mark Riordan 2023-09-20
 
-function makeSVG(filename) {
+function makeSVG(filename, xtranslate, ytranslate, color) {
     print "<svg width=\"" width "\" height=\"" height "\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">" >filename
+    print "<g transform=\"translate(" xtranslate "," ytranslate ") scale(0.22) \">" >>filename
     for(ipath=1; ipath<=nBatches; ipath++) {
         path = ""
         pointsInThisBatch = aryPointsInBatch[ipath]
@@ -34,7 +35,7 @@ function makeSVG(filename) {
             # Use cheap hack that I know the point on the circle is on the same Y
             # as the center point.
             radius = aryPoints[ipath ":" 2] - aryPoints[ipath ":" 1]
-            circle = "  <circle cx=\"" aryCenter[1] "\" cy=\"" aryCenter[2] "\" r=\"" radius "\" fill=\"black\"/>"
+            circle = "  <circle cx=\"" aryCenter[1] "\" cy=\"" aryCenter[2] "\" r=\"" radius "\" fill=\"" color "\"/>"
             print circle >>filename
         } else {
             # Create a path like this:
@@ -49,10 +50,11 @@ function makeSVG(filename) {
             path = path "Z"
             # Replace , with " " because SVG uses points with X and Y separated by spaces.
             gsub(/,/, " ", path)
-            print "  <path d=\"" path "\"/>" >>filename
+            print "  <path fill = \"" color "\" d=\"" path "\"/>" >>filename
         }
 
     }
+    print "</g>" >>filename
     print "</svg>" >>filename
     close(filename)
 }
@@ -94,5 +96,8 @@ END {
     width = 1.2 * (xMax - xMin + 1)
     height = 1.4 * (yMax - yMin + 1)
 
-    makeSVG("runner1.svg")
+    makeSVG("runner1.svg", 346, 80, "black")
+    makeSVG("runner2.svg", 245, 90, "#585858")
+    makeSVG("runner3.svg", 208, 66, "#b0b0b0")
+    makeSVG("runner4.svg", 113, 83, "#dddddd")
 }
