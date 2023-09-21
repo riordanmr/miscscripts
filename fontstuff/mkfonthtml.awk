@@ -29,7 +29,7 @@ BEGIN {
         }
     }
     if(bShow) {
-        print "<p style='font-family: " fontname "'>McKee Park - Saturday - 15th Annual - Home Run - McKee Park - Memorial Walk - " fontname "</p>" 
+        print "<p style='font-family: " fontname "'><b>H<small>OUSING</small> F<small>OUNDATION</small></b> - REALTORS<sup>®</sup> Association of South Central Wisconsin - Saturday - 15th Annual - Home Run - McKee Park - Memorial Walk - " fontname "</p>" 
     }
 }
 
