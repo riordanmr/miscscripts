@@ -1,6 +1,9 @@
 body {
     font-family: Sans-Serif;
-    font-size: 110%;
+    font-size: 16pt;
+    max-width: 80ch;
+    margin: 0 auto;   /* Center horizontally */
+    padding: 0.5em;
 }
 h1 {font-size: 130%;}
 h2 {font-size: 110%;}
@@ -21,7 +24,12 @@ td, td {padding-left: 0.5em; padding-right: 0.5em;
 @media (pointer: coarse)  {
     /* mobile device */
     body {
-        font-size: 225%;
+        font-size: 24pt;
+    }
+    .stuname {
+        font-size: 30pt;
+    }
+    img {
         zoom: 175%;
     }
 }

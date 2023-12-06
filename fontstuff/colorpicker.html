@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Picker</title>
+        <!-- Crude HTML color picker. The one you get by Googling HTML color picker
+            doesn't seem to give the correct results.
+            This page was made to help me match the color of a T-shirt I'm trying
+            to recreate.
+            MRR  20-SEP-2023
+        -->
+        <style>
+            .instructions {
+                font-family: sans-serif;
+            }
+            #matrix {
+                position: absolute;
+                top: 55px;
+                left: 5px;
+                width: 256px;
+                height: 256px;
+                border: 3px solid black;
+            }
+            #curcolor {
+                position: absolute;
+                top: 55px;
+                left: 333px;
+                width: 256px;
+                height: 256px;
+                border: 3px solid black;
+            }
+            #info {
+                padding-left: 10px;
+                border-radius: 10px;
+                position: absolute;
+                user-select: none;
+                font-size: 2em;
+                width: 120px;
+                color: #EEEEEE;
+                background-color: #FD7013;
+            }
+            #colortext {
+                position: absolute;
+                top: 333px;
+                left: 5px;
+                width: 80px;
+                height: 20px;
+                padding-left: 4px;
+                border: 1px solid black;
+            }
+        </style>
+        <script>
+            var red = 127;
+            var green = 127;
+            var blue = 127;
+            function makeHex(val) {
+                var hex = val.toString(16);
+                if(hex.length<2) {
+                    hex = "0" + hex;
+                }
+                return hex;
+            }
+            function updateColor() {
+                let colortext = makeHex(red) + " " + makeHex(green) + " " + makeHex(blue);
+                let colorhtml = "#" + makeHex(red) + makeHex(green) + makeHex(blue);
+
+                document.getElementById('colortext').innerHTML = colortext;
+
+                let colorobj = document.getElementById('curcolor');
+                colorobj.style.backgroundColor = colorhtml;
+            }
+            function getCursor(event) {
+                red = event.clientX - 11;
+                green = event.clientY - 11;
+                updateColor();
+            }
+            function onWheel(event) {
+                var deltaY = event.deltaY;
+                if(deltaY < 0) {
+                    blue--;
+                    if(blue < 0) blue = 0;
+                } else if(deltaY > 0) {
+                    blue++;
+                    if(blue > 255) blue = 255;
+                }
+                updateColor();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="instructions">Choose an RGB color using your mouse. 
+            Move the mouse horizontally and vertically 
+            within the left box to change red and green.  
+            Use the scroll wheel to change blue.
+            See the results in the box to the right,
+            and in text form in the small box below.
+        </div>
+        <div id="matrix" onmousemove="getCursor(event)" onwheel="onWheel(event)">
+        </div>
+        <div id="curcolor"></div>
+        <div id="info"></div>
+        <div id="colortext"></div>
+    </body>
+</html>

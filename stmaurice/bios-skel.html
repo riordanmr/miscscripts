@@ -2,11 +2,46 @@
 <html>
     <head>
         <title>St. Maurice Biographies / Anecdotes</title>
-        <link rel="stylesheet" href="stmaurice.css">
+        <!--<link rel="stylesheet" href="stmaurice.css">-->
+        <style>
+            body {
+                font-family: Sans-Serif;
+                font-size: 16pt;
+                max-width: 80ch;
+                margin: 0 auto;   /* Center horizontally */
+                padding: 0.5em;
+            }
+            .stuname {
+                vertical-align: center;
+                padding-right: 0.5em;
+                font-size: 20pt;
+            }
+            .stubio {
+                vertical-align: top;
+            }
+            .noborder {
+                border: 0px;
+            }
+            /* Use a larger font, only on mobile devices.  Thanks to https://habr.com/en/sandbox/163605/ */
+            @media (pointer: coarse)  {
+                /* mobile device */
+                body {
+                    font-size: 24pt;
+                }
+                .stuname {
+                    font-size: 30pt;
+                }
+                img {
+                    zoom: 175%;
+                }
+            }
+        </style>
+        <meta charset="UTF-8">
     </head>
     <body>
         <h1>St. Maurice Biographies / Anecdotes</h1>
         <p>Here are stories submitted by your classmates, sorted in alphabetical order by the 
             last name they had back at St. Maurice.
+            Click on photos to see a larger version.
         </p>
         <hr/>

@@ -1,6 +1,9 @@
 # Read the St Maurice Grade 1970 School Classmates Google Sheet
-# and create a web page that resembles that sheet.
-# The design of the web page is based on a template input HTML file. 
+# and create two web pages:
+# - status2023.html, which contains status information about how 
+#   likely each classmate is to attend the 2023 reunion.
+# - stories.html, which contains classmate-submitted stories.
+# The design of the web pages are based on template input HTML files. 
 # Mark Riordan  2023-03-05.
 # Based on the Google Sheets API sample at 
 # https://developers.google.com/sheets/api/quickstart/python
@@ -33,6 +36,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from datetime import datetime
+import re
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
@@ -301,11 +305,34 @@ def append_file(fileNameIn, fileHandleOut):
     fileHandleIn.close()
     fileHandleOut.write(text)
 
+# Given a string that may contain a MarkDown-like link like:
+# [linktext](url)
+# return a tuple:
+# - True if a link was found and replaced
+# - The input string, possibly altered with the link replaced with appropriate HTML
+def replace_link(input_string):
+    pattern = r'\[(.*?)\]\((.*?)\)'
+    match = re.search(pattern, input_string)
+    
+    if match:
+        linktext = match.group(1)
+        url = match.group(2)
+        start, end = match.span()
+        result = input_string[0:start] + '<a href="' + url + '">' + linktext + '</a>' + input_string[end:]
+        return True, result
+    else:
+        return False, input_string
+
 # Convert the text of a story to HTML.  This involves quoting special characters,
-# and replacing newlines with <p>.
+# and newlines with <p>, and converting some special markup.
 def quote_story(story):
+    story = story.replace("<", "&lt;")
     story = story.replace("&", "&amp;")
     story = story.replace("\n\n", "\n")
+    # Convert hyperlink syntax: [text](hyperlink)
+    found = True
+    while found:
+        found, story = replace_link(story)
     story = story.replace("\n", "</p><p>")
     return "<p>" + story + "</p>"
 
@@ -361,11 +388,11 @@ def create_stories_page(values):
         # same images as the local filesystem.
         photoHtml = ""
         if photoName in imagesVintage:
-            photoHtml = "<a href='images/vintage/" + photoName + "'><img src=\"images/vintage/" + photoName + "\" height='200'></a>"
+            photoHtml = "<a href='images/vintage/" + photoName + "'><img src=\"images/vintage/thumbs/" + photoName + "\" height='200'></a>"
         write_stories_line("    <td class='noborder'>" + photoHtml + "</td>")
         photoHtml = ""
         if photoName in imagesRecent:
-            photoHtml = "<a href='images/recent/" + photoName + "'><img src=\"images/recent/" + photoName + "\" height='200'></a>"
+            photoHtml = "<a href='images/recent/" + photoName + "'><img src=\"images/recent/thumbs/" + photoName + "\" height='200'></a>"
         write_stories_line("    <td class='noborder'>" + photoHtml + "</td>")
 
         write_stories_line("  </table>")
@@ -378,6 +405,7 @@ def create_stories_page(values):
     append_file("bios-skel-end.html", fileStories)
     fileStories.close()
 
+#=======================================================================
 def main():
     global fileTemplate, fileOut, googleLastModified
 

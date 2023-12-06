@@ -3,30 +3,55 @@
 <head>
     <!--- Mark Riordan  August 2023 -->
     <title>St. Maurice Grade School Class of 1970</title>
-    <link rel="stylesheet" href="stmaurice.css">
+    <!-- Stopped using stylesheet because browser reload wouldn't reload the .css -->
+    <!--<link rel="stylesheet" href="stmaurice.css">-->
+    <style>
+        body {
+            font-family: Sans-Serif;
+            font-size: 16pt;
+            max-width: 80ch;
+            margin: 0 auto;   /* Center horizontally */
+            padding: 0.5em;
+        }
+        h1 {font-size: 130%;}
+        h2 {font-size: 110%;}
+        td, td {padding-left: 0.5em; padding-right: 0.5em;
+            padding-top: 0.15em; padding-bottom: 0.15em;
+            border: 1.5px solid #ccc
+        }
+        .noborder {
+            border: 0px;
+        }
+        /* Use a larger font, only on mobile devices.  Thanks to https://habr.com/en/sandbox/163605/ */
+        @media (pointer: coarse)  {
+            /* mobile device */
+            body {
+                font-size: 24pt;
+            }
+            .stuname {
+                font-size: 30pt;
+            }
+            img {
+                zoom: 175%;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>St. Maurice Grade School Class of 1970</h1>
-    <p>Welcome, St. Maurice class of 1970! </p>
-    <p>We are planning a reunion to be held on Aug 19, 2023 at the former St. Maurice Church (now St. Rafka)
+    <p>Welcome, St. Maurice Class of 1970!</p>
+    <p>We had a reunion on Aug 19, 2023 at the former St. Maurice Church (now St. Rafka)
         at <a href="https://www.google.com/maps/place/32765+Lyndon,+Livonia,+MI+48154/@42.3876685,-83.3694259,17z/data=!3m1!4b1!4m6!3m5!1s0x8824b3103e39cd0d:0x2b6dc60466e7bc83!8m2!3d42.3876685!4d-83.3668456!16s%2Fg%2F11f4kpkvkd?authuser=0&entry=ttu">32765 Lyndon St, Livonia, MI 48154</a>.
-        We hope you all can make it.  Here is the schedule of events:
-    <ul>
-        <li>3pm: tour of the former St. Maurice School, hosted by Starfish Early Childhood Education Center
-            (which currently occupies the space).  Note: due to ongoing renovations, it is possible that
-            the tour could be cancelled.</li>
-        <li>4pm: <a href="https://www.saintrafkamichigan.com/">St. Rafka</a> will be holding their 
-            <a href="https://www.saintrafkafestival.com/">annual festival</a> at the church during the reunion, 
-            so there will be plenty of food, drink, and entertainment available. 
-            Look for the table labeled St. Maurice Reunion.
-        </li>
-        <li>Late evening: Meet at Steve Sprietzer's house at <a href="https://www.google.com/maps/place/14467+Parklane+St,+Livonia,+MI+48154/@42.3881071,-83.4023302,17z/data=!3m1!4b1!4m6!3m5!1s0x8824b2ecd7e7796b:0xead5fb85ac9854ca!8m2!3d42.3881071!4d-83.3997499!16s%2Fg%2F11c4r86ztk?authuser=0&entry=ttu">14467 Parklane, Livonia</a>.</li>
-    </ul>
+        Afterwards, we met at Steve Sprietzer's house at <a href="https://www.google.com/maps/place/14467+Parklane+St,+Livonia,+MI+48154/@42.3881071,-83.4023302,17z/data=!3m1!4b1!4m6!3m5!1s0x8824b2ecd7e7796b:0xead5fb85ac9854ca!8m2!3d42.3881071!4d-83.3997499!16s%2Fg%2F11c4r86ztk?authuser=0&entry=ttu">14467 Parklane, Livonia</a>.
     </p>
-    <p>Here's a <a href="status2023.html">list of classmates</a> and whether they're likely to attend.</p>
-    <p>Here's a <a href="images/StMaurice1969-1970b.jpg">vintage photo</a> of the class of 1970.</p>
-    <!--
-    <p>Here are <a href="stories.html">stories</a> shared by your classmates.</p>
-    -->
+    <p>Here are some related links:</p>
+    <ul>
+        <li><a href="https://photos.app.goo.gl/fke5ZRZJWoCCg46d8">Photo album of the reunion,</a> plus some vintage photos.
+          Click on a photo to see a larger version and description.</li>
+        <li><a href="stories.html">Stories</a> shared by your classmates.</li>
+        <li><a href="status2023.html">List of classmates</a> and their status regarding the 2023 reunion.</li>
+        <li><a href="images/StMaurice1969-1970b.jpg">Vintage photo</a> of the class of 1970.</li>
+        <li><a href="st-maurice-tribute-2023.pdf">Mayor Brosnan's tribute to St. Maurice</a>.</li>
+    </ul>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Record points</title>
+        <!-- HTML page to allow tracing of an image. The page accumulates
+          the X,Y coordinates of the mouse clicks.
+          You can press Enter to record a line containing "----" to separate
+          different collections of points.
+          This was created to allow me to trace graphics on a T-shirt whose
+          design I am trying to recreate.
+          Mark Riordan  2023-09-20
+         -->
+        <style>
+            body {
+                font-family: PT Serif, Georgia;
+            }
+            #textarea {
+                height: 150px;
+            }
+        </style>
+        <script>
+            function onLoad(window,event) {
+                document.addEventListener("keypress", function onEvent(event) {
+                    if (event.key === "Enter") {
+                        document.getElementById('textarea').innerHTML += "----\n";
+                    } if(event.key === "c") {
+                        // Clear the textarea.
+                        document.getElementById('textarea').innerHTML = '';
+                    }
+                });
+            }
+            function onClickImage(event) {
+                var x=event.clientX;
+                var y=event.clientY;
+                var str = x.toString() + "," + y.toString();
+                var txt = document.getElementById('textarea').innerHTML;
+                txt = txt + str + "\n";
+                document.getElementById('textarea').innerHTML = txt;
+            }
+        </script>
+    </head>
+    <body onload="onLoad(window, event);">
+        <p>Click on points in the image to record them as X,Y coordinates
+            in the text box.  Press Enter to record a separator line.
+        </p>
+        <div onclick="onClickImage(event)" onkeydown="onKeyPress(event)">
+            <img src="runner.jpg"/>
+        </div>
+        <div>
+            <textarea id="textarea" r="20" cols="15"></textarea>    
+        </div>
+    </body>
+</html>
