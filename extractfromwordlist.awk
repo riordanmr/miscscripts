@@ -20,6 +20,7 @@
 #
 # There are two modes of usage:
 # awk -f ~/Documents/GitHub/miscscripts/extractfromwordlist.awk ~/Downloads/eng_news_2020_100K/eng_news_2020_100K-words.txt >words5char.txt
+# awk -f ~/Documents/GitHub/miscscripts/extractfromwordlist.awk ~/Downloads/eng_news_2020_1M/eng_news_2020_1M-words.txt >words5char.txt
 # This creates an output file with 5-char words. This particular file contains 3046 5-letter words.
 #
 # awk -f ~/Documents/GitHub/miscscripts/extractfromwordlist.awk -v source=1 words5char.txt >words5char.go
