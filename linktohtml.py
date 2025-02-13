@@ -37,7 +37,7 @@ def remove_style_attributes(line):
 def contains(line, pattern):
     return pattern in line
 
-def process_file(input_file, output_file):
+def process_file(input_file):
     html = ''
     copying = True
     with open(input_file, 'r') as infile:
@@ -87,8 +87,8 @@ def process_file(input_file, output_file):
 
 def main():
     input_file = '548elcamrepairs.html'
-    output_file = 'repairs.html'
-
-    process_file(input_file, output_file)
+    if len(sys.argv) > 1:
+        input_file = sys.argv[1]
+    process_file(input_file)
 
 main()
