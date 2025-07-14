@@ -1,7 +1,7 @@
 # linktohtml.py - script to convert the HTML version of a Google Doc
 # and write a copy of it that makes certain changes.
 # Changes:
-# - Change link:x:y to <a href="y">x</a> 
+# - Change link:x:y: to <a href="y">x</a> 
 # - Remove class="x" and style="x" attributes
 # - Several other changes
 #
