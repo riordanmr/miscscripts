@@ -1,6 +1,8 @@
 # txt2html.awk - script to convert text to HTML.
 # Simply adds <p> and </p> to regions of text delimited
 # by blank lines.
+# Also, if a line ends with a hyphen, it is concatenated
+# with the next line, with the hyphen removed.
 # Usage: awk -f /Users/mrr/Documents/GitHub/miscscripts/txt2html.awk blameless.txt >blameless.html
 BEGIN {
     print "<!DOCTYPE html>"
@@ -16,12 +18,27 @@ BEGIN {
     if(every) {
         print "<p>" line "</p>"
     } else if(0==length(line)) {
+        if(length(prevline) > 0) {
+            print prevline
+            prevline = ""
+        }
         if(NR > 1) {
             print "</p>"
         }
         print "<p>"
     } else {
-        print line
+        if(bContinue) {
+            line = prevline line
+            prevline = ""
+            bContinue = 0
+        }
+        if(substr(line, length(line), 1) == "-") {
+            bContinue = 1
+            prevline = substr(line, 1, length(line)-1)
+        } else {
+            print line
+            prevline = ""
+        }
     }
 }
 END {
