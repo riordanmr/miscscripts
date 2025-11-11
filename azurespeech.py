@@ -7,22 +7,48 @@
 
 import azure.cognitiveservices.speech as speechsdk
 import sys
+import argparse
 
-if len(sys.argv) < 2:
-    print("Error: filename required", file=sys.stderr)
+class Settings:
+    def __init__(self, input_file, speech_key, voice_name):
+        self.input_file = input_file
+        self.speech_key = speech_key
+        self.voice_name = voice_name
+
+# Parse command line arguments. Return a Settings object, or None on error.
+def parse_command_line():
+    """
+    Parse command line arguments.
+    Returns: (Settings object or None, error message string)
+    """
+    parser = argparse.ArgumentParser(description='Azure Speech Service Text to Speech')
+    parser.add_argument('-i', '--input', required=True, help='Input text file')
+    parser.add_argument('-k', '--key', required=True, help='Azure Speech service key')
+    parser.add_argument('-v', '--voice', default='en-US-SerenaMultilingualNeural', 
+                        help='Voice name (default: en-US-SerenaMultilingualNeural)')
+    
+    try:
+        args = parser.parse_args()
+        settings = Settings(args.input, args.key, args.voice)
+        return settings
+    except SystemExit:
+        # argparse already printed the error message and usage to stderr
+        return None
+
+# Parse command line
+settings = parse_command_line()
+if settings is None:
+    # argparse already printed the usage information
     sys.exit(1)
 
-filename = sys.argv[1]
-
 # Creates an instance of a speech config with specified subscription key and service region.
-speech_key = ""  # Need to populate this with Azure Speech service key
 service_region = "westus2"
 
-speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+speech_config = speechsdk.SpeechConfig(subscription=settings.speech_key, region=service_region)
 # Note: the voice setting will not overwrite the voice element in input SSML.
-speech_config.speech_synthesis_voice_name = "en-US-SerenaMultilingualNeural"
+speech_config.speech_synthesis_voice_name = settings.voice_name
 
-with open(filename, 'r') as f:
+with open(settings.input_file, 'r') as f:
     text = f.read()
 
 # use the default speaker as audio output.
