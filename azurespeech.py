@@ -10,12 +10,14 @@ import azure.cognitiveservices.speech as speechsdk
 import sys
 import argparse
 import os
+from xml.sax.saxutils import escape
 
 class Settings:
-    def __init__(self, input_file, speech_key, voice_name):
+    def __init__(self, input_file, speech_key, voice_name, style):
         self.input_file = input_file
         self.speech_key = speech_key
         self.voice_name = voice_name
+        self.style = style
 
 # Parse command line arguments. Return a Settings object, or None on error.
 def parse_command_line():
@@ -28,10 +30,11 @@ def parse_command_line():
     parser.add_argument('-k', '--key', required=True, help='Azure Speech service key')
     parser.add_argument('-v', '--voice', default='en-US-SerenaMultilingualNeural', 
                         help='Voice name (default: en-US-SerenaMultilingualNeural)')
+    parser.add_argument('-s', '--style', default='', help='Speaking style (optional)')
     
     try:
         args = parser.parse_args()
-        settings = Settings(args.input, args.key, args.voice)
+        settings = Settings(args.input, args.key, args.voice, args.style)
         return settings
     except SystemExit:
         # argparse already printed the error message and usage to stderr
@@ -58,6 +61,19 @@ speech_config.set_speech_synthesis_output_format(
 with open(settings.input_file, 'r') as f:
     text = f.read()
 
+style = settings.style.strip() if settings.style else ''
+escaped_text = escape(text)
+if style:
+    ssml = f'''<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xml:lang="en-US">
+    <voice name="{settings.voice_name}">
+        <mstts:express-as style="{style}">{escaped_text}</mstts:express-as>
+    </voice>
+</speak>'''
+else:
+    ssml = f'''<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+    <voice name="{settings.voice_name}">{escaped_text}</voice>
+</speak>'''
+
 # Generate output filename: change extension to .mp3
 output_file = os.path.splitext(settings.input_file)[0] + '.mp3'
 
@@ -65,10 +81,11 @@ output_file = os.path.splitext(settings.input_file)[0] + '.mp3'
 audio_config = speechsdk.audio.AudioOutputConfig(filename=output_file)
 speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config)
 
-result = speech_synthesizer.speak_text_async(text).get()
+result = speech_synthesizer.speak_ssml_async(ssml).get()
 # Check result
 if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
     print("Speech synthesized to file: {}".format(output_file))
+    print("You can play the file using: afplay {}".format(output_file))
 elif result.reason == speechsdk.ResultReason.Canceled:
     cancellation_details = result.cancellation_details
     print("Speech synthesis canceled: {}".format(cancellation_details.reason))
