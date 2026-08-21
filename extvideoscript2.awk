@@ -1,4 +1,4 @@
-# extvideoscript.awk - given a script for a video, extract the
+# extvideoscript2.awk - given a script for a video, extract the
 # portions of the script for different speakers and output them to separate files.
 #
 # Sample input:
